@@ -1,22 +1,34 @@
 <%= form_for @contact, url: home_index_path, remote: true do |f| %>
-    <div class="col-md-6">
-        <%= f.label :name %></br>
-        <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
+    
+      <div class="groupinput">
+        <%= f.text_field  :name, required: true, class: "inputform" %></br>
+         <span class="highlight"></span>
+         <span class="bar"></span>
+        <%= f.label :name, class: 'labelform' %></br>
+      </div>
 
-        <%= f.label :email %></br>
-        <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br>
+      <div class="groupinput">
+        <%= f.text_field :email, required: true, class: "inputform" %></br>
+         <span class="highlight"></span>
+         <span class="bar"></span>
+        <%= f.label :email, class: 'labelform' %></br>
+      </div>
 
-      <%= f.label :message %></br>
-      <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
-                        placeholder: "Send me a message"%></br>
+      <div class="groupinput">
+      <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "inputform",
+                        placeholder: "Écrivez moi un mot (ou deux)"%></br>
+       <span class="highlight"></span>
+         <span class="bar"></span>
+      <%= f.label :message, class: 'labelform' %></br>
+      </div>
 
       <div class= "hidden">
         <%= f.label :nickname %>
         <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
       </div>
 
-      <%= f.submit 'Send Message', class: 'btn btn-primary' %>
-    </div>
+      <%= f.submit '📬', class: 'btn-contact' %>
+   
   <% end %>
   <div class="col-md-6" id="flash-message">
     <%= render 'flash' %>

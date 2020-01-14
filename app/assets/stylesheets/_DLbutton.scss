@@ -1,0 +1,127 @@
+#intro {
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 400px;
+}
+
+.buttondl {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  margin-top: 40px;
+}
+
+.buttondl .bottom {
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  width: 100%;
+  height: 100%;
+  background-color: #3fb5aa;
+  display: block;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.buttondl .top {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 30%;
+  padding: 24px 3px 26px 5px;
+  border: 2px solid #a0d3ad;
+}
+
+.buttondl-dark .top {
+  border: 2px solid #fff;
+}
+
+.buttondl .top .label {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: #e3f386;
+  font-size: 12px;
+  line-height: 110%;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.buttondl-dark .top .label {
+  text-decoration: none;
+  color: #fff;
+}
+
+.buttondl:hover .bottom {
+  left: 0;
+  top: 0;
+  background-color: #f3f3f3;
+}
+
+.buttondl:hover .top .label {
+  text-decoration: none;
+  color: #3fb5aa;
+}
+
+.buttondl-border {
+  position: absolute;
+  background-color: #3fb5aa;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.buttondl:hover .top .buttondl-border-left,
+.buttondl:hover .top .buttondl-border-right {
+  height: calc(100% + 2px);
+}
+
+.buttondl:hover .top .buttondl-border-top,
+.buttondl:hover .top .buttondl-border-bottom {
+  width: calc(100% + 2px);
+}
+
+.buttondl-border-left {
+  left: -2px;
+  bottom: -2px;
+  width: 2px;
+  height: 0;
+}
+
+.buttondl-border-top {
+  left: -2px;
+  top: -2px;
+  width: 0;
+  height: 2px;
+}
+
+.buttondl-border-right {
+  right: -2px;
+  top: -2px;
+  width: 2px;
+  height: 0;
+}
+
+.buttondl-border-bottom {
+  right: -2px;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}

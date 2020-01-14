@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Contactform</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <script type="text/javascript" src="fullpage.scrollHorizontally.min.js"></script>
+<script type="text/javascript" src="fullpage/fullpage.extensions.min.js"></script>
+    <title>Hugo Valla</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,5 +18,59 @@
 
   <body>
     <%= yield %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.js" integrity="sha256-1xq+cdMDaqP3qT8SzRoHohxeY57LfbJSMaXrzXcwz2M=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
   </body>
+
+  <script>
+    new fullpage("#wrapper", {
+    //options here
+    licenseKey: 'q2NraPV@b1',
+    autoScrolling: true,
+	  scrollHorizontally: true,
+    navigation: true,
+    keyboardScrolling: true,
+    anchors: ['home', 'about', 'project', 'cv', 'contacts'],
+    onLeave: (origin, destination, direction) => {
+      console.log(destination);
+      const section = destination.item;
+      const title = section.querySelector("h1");
+      console.log(title)
+      const tl = new TimelineMax({ delay: 0.5 });
+      tl.fromTo(title, 0.5, { y: "50", opacity: 0 }, { y: "-40", opacity: 1 });
+        if (destination.index === 1) {
+            const hugoimg = document.querySelectorAll(".hugoimg");
+            const description = document.querySelector(".description");
+            tl.fromTo(hugoimg, 2, { opacity: 0, x: "-80%" }, { opacity: 1, x: "25%" })
+              .fromTo(
+                description,
+                0.8,
+                { opacity: 0, y: "50" },
+                { y: "0", opacity: 1 }
+              )
+              .fromTo(hugoimg[0], 1, { opacity: 0.3 }, { opacity: 1 })
+              .fromTo(hugoimg[1], 2, { opacity: 0 }, { opacity: 1 })
+              .fromTo(hugoimg[2], 3, { opacity: 0 }, { opacity: 1 });
+          }
+    }
+});
+</script>
+
+<script>
+  const swiper = new Swiper('.blog-slider', {
+      spaceBetween: 30,
+      effect: 'fade',
+      loop: true,
+      mousewheel: {
+        invert: false,
+      },
+      // autoHeight: true,
+      pagination: {
+        el: '.blog-slider__pagination',
+        clickable: true,
+      }
+    });
+</script>
 </html>

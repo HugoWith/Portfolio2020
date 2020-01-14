@@ -2929,6 +2929,11 @@ fstream@^1.0.0, fstream@^1.0.12:
     mkdirp ">=0.5 0"
     rimraf "2"
 
+fullpage.js@^3.0.8:
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/fullpage.js/-/fullpage.js-3.0.8.tgz#4d89a87d36c30c0866c3dfec5e6cb363902f97b2"
+  integrity sha512-r4B/MNuxylgzSlY+w4klD0lYYlmzEy7doDvurupAuO1ObKBgu9EB5GPuoeJTP7t/njFlzAM/Wu/I+FL3WvudCw==
+
 function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"

@@ -18,4 +18,9 @@ class HomeController < ApplicationController
       end
     end
   end
+
+  def download_pdf
+    send_file "#{Rails.root}/app/assets/docs/CVHV.pdf", type: "application/pdf", x_sendfile: true
+  end
+  
 end
