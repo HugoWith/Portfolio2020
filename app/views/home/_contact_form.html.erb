@@ -14,7 +14,7 @@
         <%= f.label :email, class: 'labelform' %></br>
       </div>
 
-      <div class="groupinput">
+      <div class="groupinput" id="groupinputemail">
       <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "inputform",
                         placeholder: "Écrivez moi un mot (ou deux)"%></br>
        <span class="highlight"></span>
@@ -28,6 +28,8 @@
       </div>
 
       <%= f.submit '📬', class: 'btn-contact' %>
+      <a class="btn-contact" href='https://www.linkedin.com/in/hugovalla' target ="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a class="btn-contact" href='https://github.com/HugoWith' target ="_blank"><i class="fab fa-github"></i></a>
    
   <% end %>
   <div class="col-md-6" id="flash-message">

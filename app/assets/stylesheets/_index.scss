@@ -81,11 +81,22 @@ section h1 {
 }
 
 .description {
-  margin-top: 20%;
+  margin-top: 15%;
   width: 50%;
   margin-left: 5%;
   font-size: 20px;
 }
 .description p {
-  margin: 100px 0px;
+  margin: 50px 0px;
+}
+
+.titres {
+  text-align: center;
+  background: linear-gradient(to left, #a4d4ae, #faf2fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 70px;
+}
+
+.img_project {
 }

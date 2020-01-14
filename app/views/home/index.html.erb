@@ -2,7 +2,7 @@
  <div class="wrapper context" id="wrapper">
             
         <section class="section s1" data-anchor="home">
-            <h1>Hello, Je suis Hugo</h1>
+            <h1>Hello, je suis Hugo</h1>
          
          <%# <div id="menu"> 
              <div class="hamburger">
@@ -62,8 +62,15 @@
         <section class="section s2" data-anchor="about">
             <h1>À propos</h1>
             <div class="description">
-                <p>Ancien chef de produit digital pour de grand média je suis en reconversion à 27 ans pour devenir developpeur Web ou bien product owner. </p>
-                <p>Je vis actuellement à Paris et serait très heureux d'intégrer une équipe sur place ou bien en remote</p>
+            <p>Bonjour,</p>
+                <p> je suis Hugo, j’ai 27 ans et si vous lisez ceci, c’est que vous avez bien reçu mon message, ce qui est déjà ça de gagné.
+                Après une enfance heureuse, des études en marketing, des voyages à l’étranger et un premier job dans le digital chez TF1, j’ai décidé d’entreprendre une reconversion professionnelle.
+                Pendant une année sabbatique (mais pas trop) en Australie, j’ai commencé à apprendre à coder par moi-même et en rentrant, j’ai décidé de suivre la formation du Wagon à Lyon.
+                </p>
+                <p>Après 2 mois intensifs et disons les choses passionnants, me voici à présent frais et dispo' pour commencer une nouvelle aventure. Si ce qui suit vous donne envie de me rencontrer, alors rencontrons-nous.
+
+                </p>
+                <p>A très vite !</p>
             </div>
             <%= image_tag 'Hugo_V1', class: 'hugoimg h1' %>
             <%= image_tag 'Hugo_V2', class: 'hugoimg h2' %>
@@ -78,10 +85,10 @@
 
         <div class="blog-slider__item swiper-slide">
         <div class="blog-slider__img">
-            <img src="https://source.unsplash.com/random" alt="">
+             <%= image_tag 'qab2.png', class: 'img_project'%>
         </div>
         <div class="blog-slider__content">
-            <span class="blog-slider__code">26 December 2019</span>
+            <span class="blog-slider__code">Ruby - Ruby On Rails - JS - HTML - SASS</span>
             <div class="blog-slider__title">QUI À BETÉ ?</div>
             <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
             <a href="#" class="blog-slider__button"><i class="fas fa-angle-double-right"></i></a>
@@ -90,10 +97,10 @@
 
         <div class="blog-slider__item swiper-slide">
         <div class="blog-slider__img">
-            <img src="https://source.unsplash.com/random" alt="">
+            <%= image_tag 'vanneur.png', class: 'img_project'%>
         </div>
         <div class="blog-slider__content">
-            <span class="blog-slider__code">26 December 2019</span>
+            <span class="blog-slider__code">Ruby - Ruby On Rails - JS - HTML - SASS</span>
             <div class="blog-slider__title">VANNEUR</div>
             <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
             <a href="#" class="blog-slider__button"><i class="fas fa-angle-double-right"></i></a>
@@ -105,8 +112,8 @@
             <img src="https://source.unsplash.com/random" alt="">
         </div>
         <div class="blog-slider__content">
-            <span class="blog-slider__code">26 December 2019</span>
-            <div class="blog-slider__title">TRELLO LIKE</div>
+            <span class="blog-slider__code">Ruby - Ruby On Rails - JS - HTML - CSS</span>
+            <div class="blog-slider__title">Trello Like</div>
             <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
             <a href="#" class="blog-slider__button"><i class="fas fa-angle-double-right"></i></a>
         </div>
@@ -117,7 +124,7 @@
             <img src="https://source.unsplash.com/random" alt="">
         </div>
         <div class="blog-slider__content">
-            <span class="blog-slider__code">26 December 2019</span>
+            <span class="blog-slider__code">VueJS - JS - HTML - CSS</span>
             <div class="blog-slider__title">MÉTÉO</div>
             <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
             <a href="#" class="blog-slider__button"><i class="fas fa-angle-double-right"></i></a>
@@ -132,14 +139,13 @@
         <section class="section s4" data-anchor="cv">
             <h1>CV</h1> 
 
-            <div class="slide" data-anchor="formation"> Slide 1 
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp</p>
-            <h2>Formations</h2>
+            <div class="slide" data-anchor="formation"> 
+            <h2 class="titres">Formations</h2>
             <ul class="progressbar">
-                <li class="active">IUT TECHNIQUES DE COMMERCIALISATION - ROANNE
-                IT SLIGO - IRELANDE
-                    <p>2010 - 2013</p>
-                    <%= image_tag 'logo-iut-Roanne.png', class: 'logo-roanne' %>
+                <li class="active">Avant ça c'est vieux ... 📠 <br>
+                
+                    <p>1992 - 2013</p>
+                    <%# <%= image_tag 'logo-iut-Roanne.png', class: 'logo-roanne' %> 
                 </li>
                 <li class="active">KEDGE BUSINESS SCHOOL - BORDEAUX
                     <p>2013 - 2017</p>
@@ -156,7 +162,8 @@
         <div class="center-content-inner">
             <div class="content-section content-section-margin">
                 <%# <div class="content-section-grid clearfix"> %>
-                    <a href="#" class="buttondl nav-link">
+                    <%# <a href="#" class="buttondl nav-link"> %>
+                    <%= link_to download_pdf_path, target: "_blank", class: 'buttondl nav-link' do %>
                         <div class="bottom"></div>
                             <div class="top">
                                 <div class="label">Télécharger mon CV</div>
@@ -165,21 +172,21 @@
                                     <div class="buttondl-border buttondl-border-right"></div>
                                     <div class="buttondl-border buttondl-border-bottom"></div>
                             </div>
-                    </a>
+                        <% end %>
+                    <%# </a> %>
                 <%# </div> %>
             </div>
         </div>
     </div>
 </div>
 
-             <div class="slide_button">
+             <%# <div class="slide_button">
                 <a href="#exp">Button Test</a>
-            </div>
+            </div> %>
             </div>
 
-            <div class="slide" data-anchor="exp"> Slide 2 
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp</p>
-                <h2>Expériences</h2>
+            <div class="slide" data-anchor="exp"> 
+                <h2 class="titres">Expériences</h2>
                     <ul class="progressbar">
                         <li class="active entreprise">PIERRE & VACANCES
                             <div id="detail-description">
@@ -210,7 +217,8 @@
         <div class="center-content-inner">
             <div class="content-section content-section-margin">
                 <%# <div class="content-section-grid clearfix"> %>
-                    <a href="../../app/assets/files/CVHV.pdf" download="proposed_file_name.pdf" class="buttondl nav-link">
+                    <%# <a href="../../app/assets/files/CVHV.pdf" download="proposed_file_name.pdf" class="buttondl nav-link"> %>
+                    <%= link_to download_pdf_path, target: "_blank", class: 'buttondl nav-link' do %>
                         <div class="bottom"></div>
                             <div class="top">
                             
@@ -220,19 +228,20 @@
                                     <div class="buttondl-border buttondl-border-top"></div>
                                     <div class="buttondl-border buttondl-border-right"></div>
                                     <div class="buttondl-border buttondl-border-bottom"></div>
-                            </div>
-                    </a>
+                       </div>
+                         <% end %>   
+                    <%# </a> %>
                 <%# </div> %>
             </div>
         </div>
     </div>
 </div>
-
 <%= link_to "download", download_pdf_path, target: "_blank", class: 'label' %>
 
-                <div class="slide_button">
+
+                <%# <div class="slide_button">
                     <a href="#formation">Button Test</a>
-                </div>
+                </div> %>
             </div>
            
         </section>
