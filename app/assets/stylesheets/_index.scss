@@ -96,7 +96,31 @@ section h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: 70px;
+  padding-top: 40px;
 }
 
-.img_project {
+#buttonform {
+  float: right;
+  margin-right: 30px;
+  margin-top: 60px;
+  animation: btn-pulse 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+#buttonexp {
+  float: right;
+  margin-right: 30px;
+  margin-top: 60px;
+  animation: btn-pulse 1s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+@keyframes btn-pulse {
+  0% {
+    box-shadow: 2px 3px 7px transparent;
+  }
+  20% {
+    box-shadow: 2px 3px 7px #a0d3ad;
+  }
+  100% {
+    box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+  }
 }

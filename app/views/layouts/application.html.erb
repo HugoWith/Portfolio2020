@@ -14,6 +14,7 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -30,7 +31,8 @@
     //options here
     licenseKey: 'q2NraPV@b1',
     autoScrolling: true,
-	  scrollHorizontally: true,
+    scrollHorizontally: true,
+    controlArrows: false,
     navigation: true,
     keyboardScrolling: true,
     anchors: ['home', 'about', 'project', 'cv', 'contacts'],

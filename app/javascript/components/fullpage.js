@@ -1,5 +1,3 @@
-import fullpage from "fullpage.js";
-
 const initFullPageJs = () => {
   new fullpage("#wrapper", {
     //options here

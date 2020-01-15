@@ -4,9 +4,10 @@
 // that code so it'll be compiled.
 
 require("@rails/ujs").start();
-require("turbolinks").start();
+// require("turbolinks").start();
 require("@rails/activestorage").start();
 require("channels");
+require("fullpage");
 
 import { initFullPageJs } from "../components/fullpage";
 import { initCustom } from "../components/custom";
@@ -17,4 +18,4 @@ import { initCustom } from "../components/custom";
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
-initCustom();
+// initCustom();
