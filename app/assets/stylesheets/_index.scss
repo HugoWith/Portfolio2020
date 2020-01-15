@@ -39,6 +39,15 @@ section h1 {
   -webkit-text-fill-color: transparent;
 }
 
+.chevron-down {
+  color: #32afa9;
+  position: absolute;
+  font-size: 24px;
+  top: 92%;
+  right: 50%;
+  animation: arrow-jump 1.5s infinite;
+}
+
 .s2 {
   background-image: url(BG_about.svg);
   background-size: 250%;
@@ -122,5 +131,18 @@ section h1 {
   }
   100% {
     box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+  }
+}
+
+@-webkit-keyframes arrow-jump {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transform: translateY(10px);
   }
 }
