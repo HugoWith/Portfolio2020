@@ -27,6 +27,7 @@ section h1 {
   background-size: 45%, 45%;
   background-repeat: no-repeat, no-repeat;
   background-position: top left, bottom right;
+  animation: bg-jump 8s infinite;
 }
 .section h1 {
   font-size: 64px;
@@ -59,6 +60,7 @@ section h1 {
   background-size: 110%;
   background-position: center;
   background-repeat: no-repeat;
+  animation: bg-jump 15s infinite;
 }
 
 .s4 {
@@ -87,16 +89,22 @@ section h1 {
   top: 70%;
   left: 50%;
   transform: translate(70%, -70%);
+  object-fit: contain;
 }
 
 .description {
-  margin-top: 15%;
+  margin-top: 10%;
   width: 50%;
   margin-left: 5%;
   font-size: 20px;
 }
 .description p {
   margin: 50px 0px;
+}
+
+.text-emphasised {
+  font-weight: 900;
+  color: #36998f;
 }
 
 .titres {
@@ -109,17 +117,33 @@ section h1 {
 }
 
 #buttonform {
+  text-decoration: none;
   float: right;
   margin-right: 30px;
   margin-top: 60px;
+  transition: 0.8s ease-in-out;
   animation: btn-pulse 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
 }
 
 #buttonexp {
+  text-decoration: none;
   float: right;
   margin-right: 30px;
   margin-top: 60px;
+  transition: 0.8s ease-in-out;
   animation: btn-pulse 1s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+#buttonexp:hover {
+  color: #ebe720;
+  transition: 0.8s ease-in-out;
+  padding: 30px;
+}
+
+#buttonform:hover {
+  color: #ebe720;
+  transition: 0.8s ease-in-out;
+  padding: 30px;
 }
 
 @keyframes btn-pulse {
@@ -144,5 +168,29 @@ section h1 {
     -moz-transform: translateY(10px);
     -o-transform: translateY(10px);
     transform: translateY(10px);
+  }
+}
+
+@-webkit-keyframes bg-jump {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -o-transform: translateY(5px);
+    transform: translateY(5px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -o-transform: translateY(5px);
+    transform: translateY(5px);
   }
 }
