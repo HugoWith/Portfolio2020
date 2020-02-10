@@ -7,7 +7,7 @@ const initFullPageJs = () => {
     controlArrows: false,
     navigation: true,
     keyboardScrolling: true,
-    anchors: ["home", "about", "project", "cv", "contact"],
+    anchors: ["home", "about", "project", "cv", "contacts"],
     onLeave: (origin, destination, direction) => {
       console.log(destination);
       const section = destination.item;
