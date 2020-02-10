@@ -4,6 +4,7 @@ const initFullPageJs = () => {
     licenseKey: "q2NraPV@b1",
     autoScrolling: true,
     scrollHorizontally: true,
+    controlArrows: false,
     navigation: true,
     keyboardScrolling: true,
     anchors: ["home", "about", "project", "cv", "contact"],
