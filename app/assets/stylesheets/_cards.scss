@@ -2,6 +2,8 @@
 
 .blog-slider {
   width: 95%;
+  height: 60vh;
+
   position: relative;
   max-width: 800px;
   margin: auto;
@@ -9,7 +11,7 @@
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
   padding: 25px;
   border-radius: 25px;
-  height: 400px;
+  // height: 400px;
   transition: all 0.3s;
 
   @media screen and (max-width: 992px) {
@@ -172,15 +174,24 @@
     width: 100%;
   }
   &__pagination {
-    position: absolute;
-    z-index: 21;
-    right: 20px;
-    width: 11px !important;
-    text-align: center;
-    left: auto !important;
-    top: 50%;
-    bottom: auto !important;
-    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    margin: -27px 0px;
+    /* padding: 6px; */
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    z-index: 1;
+    // list-style: none;
+    // float: left;
+    // z-index: 21;
+    // right: 20px;
+    // width: 11px !important;
+    // text-align: center;
+    // left: auto !important;
+    // // top: 50%;
+    // bottom: auto !important;
+    // transform: translateY(-50%);
     @media screen and (max-width: 768px) {
       transform: translateX(-50%);
       left: 50% !important;
@@ -191,29 +202,46 @@
       align-items: center;
     }
     &.swiper-pagination-bullets .swiper-pagination-bullet {
-      margin: 8px 0;
+      margin: 8px 25px;
       @media screen and (max-width: 768px) {
-        margin: 0 5px;
+        margin: 0 10px;
       }
     }
 
     .swiper-pagination-bullet {
-      width: 4px;
-      height: 20px;
-      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
       border-radius: 10px;
       background: #062744;
       opacity: 0.2;
       transition: all 0.3s;
+      z-index: 1;
       &-active {
         opacity: 1;
         background: #ebe720;
-        height: 50px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
         box-shadow: 0px 0px 20px rgba(208, 247, 34, 0.3);
+        animation: btn-pulse 1.5s infinite cubic-bezier(0.3, 0, 0, 0.5);
 
         @media screen and (max-width: 768px) {
           height: 11px;
           width: 30px;
+        }
+      }
+      @keyframes btn-pulse {
+        0% {
+          box-shadow: 2px 3px 7px transparent;
+        }
+        20% {
+          box-shadow: 2px 3px 7px #a0d3ad;
+        }
+        100% {
+          box-shadow: 0 0 0 20px rgba(232, 76, 61, 0);
         }
       }
     }
