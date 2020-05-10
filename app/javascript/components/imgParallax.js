@@ -1,5 +1,6 @@
 const imgParallax = () => {
-  let imgMove = document.querySelector(".paralax");
+  let imgMove = document.querySelectorAll(".paralax");
+  console.log(imgMove);
   document.addEventListener("mousemove", (e) => {
     VanillaTilt.init(imgMove, {
       max: 10,
