@@ -13,8 +13,8 @@
   <meta property="og:image" content="https://i.postimg.cc/WpQBYzSD/Hugo-Home-Page.png"/>
   <meta property='og:description' content='Visitez mon site Web ! 😄'/>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"> </script>
-  <script type="text/javascript" src="fullpage.scrollHorizontally.min.js"></script>
-  <script type="text/javascript" src="fullpage/fullpage.extensions.min.js"></script>
+  <%# <script type="text/javascript" src="fullpage.scrollHorizontally.min.js"></script>
+  <script type="text/javascript" src="fullpage/fullpage.extensions.min.js"></script> %>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.js" integrity="sha256-1xq+cdMDaqP3qT8SzRoHohxeY57LfbJSMaXrzXcwz2M=" crossorigin="anonymous"></script>
@@ -33,6 +33,7 @@
     <%= yield %>
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
   </body>
 
   <%# <script>

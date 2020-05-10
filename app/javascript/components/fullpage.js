@@ -9,7 +9,6 @@ const initFullPageJs = () => {
     keyboardScrolling: true,
     anchors: ["home", "about", "project", "cv", "contacts"],
     onLeave: (origin, destination, direction) => {
-      console.log(destination);
       const section = destination.item;
       const title = section.querySelector("h1");
       console.log(title);
@@ -34,7 +33,7 @@ const initFullPageJs = () => {
           .fromTo(hugoimg[1], 2, { opacity: 0 }, { opacity: 1 })
           .fromTo(hugoimg[2], 3, { opacity: 0 }, { opacity: 1 });
       }
-    }
+    },
   });
 };
 

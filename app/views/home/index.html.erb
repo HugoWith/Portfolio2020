@@ -1,8 +1,9 @@
 
+ <span class="cursor"></span>
  <div class="wrapper context" id="wrapper">
             
-        <section class="section s1" data-anchor="home">
-            <h1>Hello, je suis Hugo</h1>
+        <section class="section s1 " data-anchor="home">
+            <h1 class="">Hello, je suis Hugo</h1>
             
          
          <%# <div id="menu"> 
@@ -20,7 +21,7 @@
              </div>
         </div> %>
 
-        <nav class="menu">
+        <nav class="menu ">
             <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
             <label class="menu-open-button" for="menu-open">
                 <span class="hamburger hamburger-1"></span>
@@ -63,8 +64,8 @@
         </section>
 
         <section class="section s2" data-anchor="about">
-            <h1>À propos</h1>
-            <div class="description">
+            <h1 class="bigC">À propos</h1>
+            <div class="description bigC">
             <p>Bonjour,</p>
                 <p>Je suis Hugo, j’ai 27 ans et si vous avez atteri ici, c’est déjà une petite victoire 😉.<br>
                 Après des <span class="text-emphasised">études en marketing,</span> des voyages à l’étranger, des stages et un premier job dans le <span class="text-emphasised">digital chez TF1,</span> j’ai décidé d’entreprendre une <span class="text-emphasised">reconversion professionnelle.</span><br>
@@ -81,136 +82,134 @@
             <%= image_tag 'Hugo_V3', class: 'hugoimg h3' %>
         </section>
 
-<section class="section s3" data-anchor="projet">
-    <h1>8 Projets</h1>
+        <section class="section s3" data-anchor="projet">
+            <h1 class='bigC'>Projets</h1>
 
-    <div class="blog-slider">
-    <div class="blog-slider__wrp swiper-wrapper">
-
-    <div class="blog-slider__item swiper-slide">
-        <div class="blog-slider__img">
-             <%= image_tag 'qab2.png', class: 'img_project'%>
-        </div>
-        <div class="blog-slider__content">
-            <span class="blog-slider__code">Ruby - Ruby On Rails - JS - HTML - SASS - PostgreSQL - OmniAuth - Notification Push - StimulusJS</span>
-            <div class="blog-slider__title">QUI À BETÉ ?</div>
-            <div class="blog-slider__text">Fullstack - Site de Paris entre amis. Pariez sur absolument tout et n'importe quoi.</div>
-            <a href="https://www.quiabete.co/" target="_blank" class="blog-slider__button"><i class="fas fa-angle-double-right"></i></a>
-        </div>
-        </div>
-
-            <div class="blog-slider__item swiper-slide">
-        <div class="blog-slider__img">
-             <%= image_tag 'QCQM.png', class: 'img_project'%>
-        </div>
-        <div class="blog-slider__content">
-            <span class="blog-slider__code"> JS - VueJS - HTML - CSS - SASS - Firebase </span>
-            <div class="blog-slider__title">What are we eating tonight ?</div>
-            <div class="blog-slider__text">Fullstack/ Exlusivement Mobile - Vous ne savez pas quoi manger ce soir ? Pas d'inspiration ? "What are we eating tonight ?" à la solution pour vous. </div>
-            <a href="https://questcequonmange.firebaseapp.com/" target="_blank" class="blog-slider__button"><i class="fas fa-angle-double-right"></i></a>
-        </div>
-        </div>
-
-            <div class="blog-slider__item swiper-slide">
-        <div class="blog-slider__img">
-             <%= image_tag 'studiozerance.png', class: 'img_project'%>
-        </div>
-        <div class="blog-slider__content">
-            <span class="blog-slider__code"> JS - VueJS - HTML - CSS - SASS - Firebase </span>
-            <div class="blog-slider__title">Studio Zérance</div>
-            <div class="blog-slider__text">Design/Front - Réalisation de la HomePage </div>
-            <a href="https://studiozerancecopycat.firebaseapp.com/" target="_blank" class="blog-slider__button"><i class="fas fa-angle-double-right"></i></a>
-        </div>
-        </div>
-
-
-        <div class="blog-slider__item swiper-slide">
-        <div class="blog-slider__img">
-            <%= image_tag 'vanneur.png', class: 'img_project'%>
-        </div>
-        <div class="blog-slider__content">
-            <span class="blog-slider__code">Ruby - Ruby On Rails - JS - HTML - SASS - PostgreSQL - Devise Authentification - Geocoder</span>
-            <div class="blog-slider__title">VANNEUR</div>
-            <div class="blog-slider__text">Fullstack - Airbnb like, Vanneur est un site de réservation de Vans aménagés entre particuliers</div>
-            <a href="https://vanneur.herokuapp.com/" target="_blank" class="blog-slider__button"><i class="fas fa-angle-double-right"></i></a>
-        </div>
-        </div>
-        
-        <div class="blog-slider__item swiper-slide">
-        <div class="blog-slider__img">
-            <%= image_tag 'FWAYT.png', class: 'img_project'%>
-        </div>
-        <div class="blog-slider__content">
-            <span class="blog-slider__code">VueJS - JS - Firebase - Materialize - HTML - CSS </span>
-            <div class="blog-slider__title">From Where are you talking ?</div>
-            <div class="blog-slider__text">
-            Fullstack - Web app qui géolocalise les gens connectés sur une carte et leur permet de discuter ensemble via un système de feed.
+             <div class="slide" data-anchor="llsolidaires"> 
+                <div class="WrapperProject">
+                    <div class="imgPart">
+                        <%= image_tag 'llSolidaireNoBGcopy.png', class: 'ProjectImg paralax'%>
+                    </div>
+                    <div class="textPart">
+                        <div class="innerTextPart">
+                            <h3 class="titleProject">Les Logements Solidaires</h3>
+                            <p class="technos">👨‍💻 Ruby - Ruby On Rails - JS - HTML - SASS - PostgreSQL - Geocoder</p>
+                            <p>🚀 Fullstack</p>
+                            <p>✏️ Développé pendant la crise du Covid-19 à l'initiative de @Malt, ce site a pour but de mettre à disposition des appartements aux personnels soignants, proche de leur lieu de travail, directement via les propriétaires.</p>
+                            <div class="btnProject ">
+                              <a class="btn-contact bigC" href='https://github.com/HugoWith' target ="_blank"><i class="fab fa-github"></i></a>
+                              <a class="btn-contact bigC projetLink" href="#projet/consilium">Prochain projet<i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
             </div>
-            <a href="https://fromwhereareyoutalking.firebaseapp.com/" target="_blank" class="blog-slider__button"><i class="fas fa-angle-double-right"></i></a>
-        </div>
-        </div>
+                <a class="btn-contact bigC projetLink" href="#projet/consilium">Prochain projet<i class="fas fa-chevron-right"></i></a>
 
-
-        <div class="blog-slider__item swiper-slide">
-        <div class="blog-slider__img">
-            <%= image_tag 'DTC.png', class: 'img_project'%>
-        </div>
-        <div class="blog-slider__content">
-            <span class="blog-slider__code">VueJS - JS - Firebase - Materialize - HTML - CSS </span>
-            <div class="blog-slider__title">Dans Ton Chat</div>
-            <div class="blog-slider__text">
-            Fullstack - Chat instantanné pour discuter avec n'importe qui connecté en même temps que vous
+            <div class="slide" data-anchor="consilium"> 
+                <div class="WrapperProject">
+                    <div class="imgPart">
+                        <%= image_tag 'ConsiliumPortfolio4.png', class: 'ProjectImg paralax consiliumImg'%>
+                    </div>
+                    <div class="textPart">
+                        <div class="innerTextPart">
+                            <h3 class="titleProject">Consilium</h3>
+                            <p class="technos">👨‍💻 Wordpress - JS - CSS - HTML</p>
+                            <p>🚀 EN COURS DE DEV - Fullstack</p>
+                            <p>✏️ Catalogue, outils de conseil et site internet pour Consilium, PME lyonnaise experte en sécurité incendie</p>
+                            <div class="btnProject bigC">
+                              <a class="btn-contact " href='https://github.com/HugoWith' target ="_blank"><i class="fab fa-github"></i></a>
+                              <a class="btn-contact projetLink bigC" href='https://www.linkedin.com/in/hugovalla' target ="_blank">Prochain projet<i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
             </div>
-            <a href="https://dans-ton-chat.firebaseapp.com/" target="_blank" class="blog-slider__button"><i class="fas fa-angle-double-right"></i></a>
-        </div>
-        </div>
 
-        <div class="blog-slider__item swiper-slide">
-        <div class="blog-slider__img">
-            <img src="https://images.unsplash.com/photo-1515150144380-bca9f1650ed9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="">
-        </div>
-        <div class="blog-slider__content">
-            <span class="blog-slider__code">VueJS - JS - Firebase - Materialize - HTML - CSS</span>
-            <div class="blog-slider__title">Ecotips</div>
-            <div class="blog-slider__text">
-            Fullstack - Plateforme de partage de conseils verts à appliquer partout, tout le temps
+          <div class="slide" data-anchor="Projet3"> 
+                <div class="WrapperProject">
+                    <div class="imgPart">
+                        <%= image_tag 'WAWETsmallNobg.png', class: 'ProjectImg paralax wawetImg'%>
+                    </div>
+                    <div class="textPart">
+                        <div class="innerTextPart">
+                            <h3 class="titleProject">What are we eating tonight ?</h3>
+                            <p class="technos">👨‍💻 VueJS - JS - Firebase - Firestore - Axios - SCSS - HTML</p>
+                            <p>🚀 Fullstack</p>
+                            <p>✏️ Pas d'idée pour le repas de ce soir. Cette webApp exclusivement mobile devrait pouvoir vous aider.</p>
+                            <div class="btnProject bigC">
+                              <a class="btn-contact " href='https://github.com/HugoWith' target ="_blank"><i class="fab fa-github"></i></a>
+                              <a class="btn-contact projetLink bigC" href='https://www.linkedin.com/in/hugovalla' target ="_blank">Prochain projet<i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>   
+                 </div>
             </div>
-            <a href="https://media-bank-c0652.firebaseapp.com/#/" target="_blank" class="blog-slider__button"><i class="fas fa-angle-double-right"></i></a>
-        </div>
-        </div>
 
-        <div class="blog-slider__item swiper-slide">
-        <div class="blog-slider__img">
-            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
-        </div>
-        <div class="blog-slider__content">
-            <span class="blog-slider__code">Ruby - Ruby On Rails - VueJS - JS - HTML - CSS - PostgreSQL</span>
-            <div class="blog-slider__title">Trello Like</div>
-            <div class="blog-slider__text">Fullstack - Comme son nom l'indique Trello like est un site de management de projets entre équipe. </p>
+            <div class="slide" data-anchor="Projet4"> 
+                <div class="WrapperProject">
+                    <div class="imgPart">
+                        <%= image_tag 'QAB.png', class: 'ProjectImg paralax '%>
+                    </div>
+                    <div class="textPart">
+                        <div class="innerTextPart">
+                            <h3 class="titleProject">Qui a beté ?</h3>
+                            <p class="technos">👨‍💻 Ruby - Ruby On Rails - JS - HTML - SASS - Postgre - OmniAuth - Notification Push </p>
+                            <p>🚀 Fullstack</p>
+                            <p>✏️ Paris entre amis. Pariez sur absolument tout et n'importe quoi, vraiment n'importe quoi !</p>
+                            <div class="btnProject bigC">
+                              <a class="btn-contact " href='https://github.com/HugoWith' target ="_blank"><i class="fab fa-github"></i></a>
+                              <a class="btn-contact projetLink bigC" href='https://www.linkedin.com/in/hugovalla' target ="_blank">Prochain projet<i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
             </div>
-            <a href="https://trellike.herokuapp.com/" target="_blank" class="blog-slider__button"><i class="fas fa-angle-double-right"></i></a>
-        </div>
-        </div>
 
-          <%# <div class="blog-slider__item swiper-slide">
-        <div class="blog-slider__img">
-            <img src="https://source.unsplash.com/random" alt="">
-        </div>
-        <div class="blog-slider__content">
-            <span class="blog-slider__code">JS - HTML - CSS</span>
-            <div class="blog-slider__title">MÉTÉO</div>
-            <div class="blog-slider__text">Petit site météorologique pour se confronter à un nouveau language (VueJS)</div>
-            <a href="#" class="blog-slider__button"><i class="fas fa-angle-double-right"></i></a>
-        </div>
-        </div> %>
-        
-    </div>
-    <div class="blog-slider__pagination"></div>
-    </div>
-</section>
+          <div class="slide" data-anchor="Projet5"> 
+                <div class="WrapperProject">
+                    <div class="imgPart">
+                        <%= image_tag 'StudioZeranceSmall-min.png', class: 'ProjectImg paralax '%>
+                    </div>
+                    <div class="textPart">
+                        <div class="innerTextPart">
+                            <h3 class="titleProject">Studio Zérance - Intégration</h3>
+                            <p class="technos">👨‍💻 VueJS - JS - HTML - SASS  </p>
+                            <p>🚀 Intégration</p>
+                            <p>✏️ Intégration de la Home page de Studio Zérance</p>
+                            <div class="btnProject bigC">
+                              <a class="btn-contact " href='https://github.com/HugoWith' target ="_blank"><i class="fab fa-github"></i></a>
+                              <a class="btn-contact projetLink bigC" href='https://www.linkedin.com/in/hugovalla' target ="_blank">Prochain projet<i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+
+          <div class="slide" data-anchor="Projet6"> 
+             <div class="WrapperProject">
+                    <div class="imgPart">
+                        <%= image_tag 'Votreprojet-min.png', class: 'ProjectImg paralax '%>
+                    </div>
+                    <div class="textPart">
+                        <div class="innerTextPart">
+                            <h3 class="titleProject">Envie de travailler ensemble ?</h3>
+                            <p class="technos">👨‍💻 Ruby - RubyOnRails - VueJS - JS - HTML - SASS - Wordpress  </p>
+                            <p>🚀 Fullstack</p>
+                            <p>✏️ Si vous voulez en avoir un petit peu plus n'hésitez pas à me contacter, j'ai quelques petits projets, intégrations dans les tiroirs !  </p>
+                            <div class="btnProject bigC">
+                              <a class="btn-contact " href='https://github.com/HugoWith' target ="_blank"><i class="fab fa-github"></i></a>
+                              <a class="btn-contact projetLink bigC" href='https://www.linkedin.com/in/hugovalla' target ="_blank">Prochain projet<i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+                   
+    </section>
 
         <section class="section s4" data-anchor="cv">
-            <h1>Vie Pro</h1> 
+            <h1 class="">Vie Pro</h1> 
 
             <div class="slide" data-anchor="formation"> 
             <h2 class="titres">Formations</h2>
@@ -323,7 +322,7 @@
         </section>
 
         <section class="section s5" data-anchor="contacts">
-            <h1>Contact</h1>
+            <h1 class="">Contact</h1>
            
             <div id="contact">
             <%= render 'contact_form' %>
