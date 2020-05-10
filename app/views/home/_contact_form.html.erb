@@ -26,11 +26,11 @@
         <%= f.label :nickname %>
         <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
       </div>
-
+      <div class="submit">
       <%= f.submit '📬', class: 'btn-contact' %>
       <a class="btn-contact" href='https://www.linkedin.com/in/hugovalla' target ="_blank"><i class="fab fa-linkedin-in"></i></a>
       <a class="btn-contact" href='https://github.com/HugoWith' target ="_blank"><i class="fab fa-github"></i></a>
-   
+    </div>
   <% end %>
   <div class="col-md-6" id="flash-message">
     <%= render 'flash' %>

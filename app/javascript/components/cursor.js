@@ -27,6 +27,16 @@ const cursor = () => {
       cursor.classList.remove("cursor--big");
     });
   });
+
+  let submit = document.querySelector(".submit").firstElementChild;
+
+  submit.addEventListener("mouseover", (e) => {
+    cursor.classList.add("cursor--big");
+  });
+  submit.addEventListener("mouseleave", (e) => {
+    cursor.classList.remove("cursor--big");
+  });
+
   // let target = e.target;
   // target.addEventListener("mouseover", (e) => {
   //   cursor.classList.add("cursor--big");
