@@ -74,6 +74,20 @@ section h1 {
   background: linear-gradient(to left, #a4d4ae, #32afa9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 60px;
+  }
+
+  @media screen and (max-width: 992px) {
+    font-size: 50px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 34px;
+  }
 }
 
 .chevron-down {
@@ -127,14 +141,42 @@ section h1 {
   transform: translate(70%, -70%);
   object-fit: contain;
 
+  @media screen and (max-width: 1200px) {
+    width: 51%;
+    height: 42%;
+    position: absolute;
+    top: 95%;
+    left: 27%;
+    transform: translate(70%, -70%);
+    object-fit: contain;
+  }
+
   @media screen and (max-width: 992px) {
-    width: 500px;
+    width: 51%;
+    height: 42%;
+    position: absolute;
+    top: 95%;
+    left: 27%;
+    transform: translate(70%, -70%);
+    object-fit: contain;
   }
   @media screen and (max-width: 768px) {
-    width: 350px;
+    width: 51%;
+    height: 42%;
+    position: absolute;
+    top: 95%;
+    left: 27%;
+    transform: translate(70%, -70%);
+    object-fit: contain;
   }
   @media screen and (max-width: 576px) {
-    width: 150px;
+    width: 51%;
+    height: 42%;
+    position: absolute;
+    top: 90%;
+    left: 27%;
+    transform: translate(70%, -70%);
+    object-fit: contain;
   }
 }
 
@@ -143,6 +185,29 @@ section h1 {
   width: 50%;
   margin-left: 5%;
   font-size: 20px;
+
+  @media screen and (max-width: 1200px) {
+    p {
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    p {
+      font-size: 13px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    p {
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    width: 80%;
+    p {
+      font-size: 9px;
+    }
+  }
 }
 .description p {
   margin: 50px 0px;
