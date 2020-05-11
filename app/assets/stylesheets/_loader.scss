@@ -9,23 +9,20 @@
   justify-content: center;
   align-items: center;
   background-color: white;
-
-  .hidden {
-    animation: fadeOut ease 10s;
+  .hiddenLoader {
+    animation: fadeOutLoader ease 1s;
     animation-fill-mode: forwards;
   }
 }
 
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
+.hiddenLoader {
+  animation: fadeOutLoader ease 1.5s;
+  animation-fill-mode: forwards;
+}
 
-  70% {
-    opacity: 0.5;
-  }
-
+@keyframes fadeOutLoader {
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }
