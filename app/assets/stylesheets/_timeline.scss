@@ -14,6 +14,11 @@ $ter: #ebe720;
     position: relative;
     text-align: center;
     letter-spacing: 2px;
+
+    @media screen and (max-width: 576px) {
+      font-size: 9px;
+    }
+
     &:before {
       content: "";
       //   counter-increment: step;
@@ -27,6 +32,11 @@ $ter: #ebe720;
       border-radius: 50%;
       background-color: white;
       letter-spacing: 0px;
+
+      @media screen and (max-width: 576px) {
+        width: 30px;
+        height: 30px;
+      }
     }
     &:after {
       content: "";
@@ -37,6 +47,10 @@ $ter: #ebe720;
       top: 25px;
       left: -50%;
       z-index: -1;
+
+      @media screen and (max-width: 576px) {
+        top: 14px;
+      }
     }
     &:first-child:after {
       content: none;
@@ -72,27 +86,57 @@ $ter: #ebe720;
   width: 100px;
   height: 50px;
   margin-top: 18px;
+
+  @media screen and (max-width: 576px) {
+    width: 60px;
+    height: 30px;
+    margin-top: 18px;
+  }
 }
 
 .logo-wagon {
   width: 124px;
   height: 40px;
   margin-top: 25px;
+
+  @media screen and (max-width: 576px) {
+    width: 68px;
+    height: 23px;
+    margin-top: 50px;
+  }
 }
 
 .logo-pvcp {
   width: 151px;
   height: 49px;
   margin-top: 13px;
+
+  @media screen and (max-width: 576px) {
+    width: 100px;
+    height: 26px;
+    margin-top: 13px;
+  }
 }
 
 .logo-ftp {
   width: 124px;
   height: 19px;
   margin-top: 30px;
+
+  @media screen and (max-width: 576px) {
+    width: 94px;
+    height: 13px;
+    margin-top: 30px;
+    margin-left: 6px;
+  }
 }
 
 .logo-tfp {
   width: 104px;
   height: 88px;
+
+  @media screen and (max-width: 576px) {
+    width: 73px;
+    height: 62px;
+  }
 }

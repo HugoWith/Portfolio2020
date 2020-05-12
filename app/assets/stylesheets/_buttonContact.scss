@@ -11,6 +11,10 @@
   height: 5vh;
   margin-right: 10px;
   margin-top: 30px;
+
+  @media screen and (max-width: 576px) {
+    height: 100%;
+  }
 }
 
 .btn-contact:hover {

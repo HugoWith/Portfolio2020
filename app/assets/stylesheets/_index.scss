@@ -47,6 +47,10 @@ a {
     background-color: transparent;
     border: 1px solid black;
   }
+
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
 }
 
 /* section {
@@ -180,6 +184,13 @@ section h1 {
   }
 }
 
+#hugoimgContact {
+  @media screen and (max-width: 576px) {
+    transform: translate(70%, -235%);
+    width: 44%;
+  }
+}
+
 .description {
   margin-top: 10%;
   width: 50%;
@@ -234,6 +245,10 @@ section h1 {
   margin-top: 60px;
   transition: 0.8s ease-in-out;
   animation: btn-pulse 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+  @media screen and (max-width: 576px) {
+    transform: translate(16px, -256px);
+    width: 10%;
+  }
 }
 
 #buttonexp {
@@ -243,6 +258,11 @@ section h1 {
   margin-top: 60px;
   transition: 0.8s ease-in-out;
   animation: btn-pulse 1s infinite cubic-bezier(0.66, 0, 0, 1);
+
+  @media screen and (max-width: 576px) {
+    transform: translate(16px, -256px);
+    width: 10%;
+  }
 }
 
 #buttonexp:hover {

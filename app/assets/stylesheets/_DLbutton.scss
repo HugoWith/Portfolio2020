@@ -3,6 +3,10 @@
   margin-right: auto;
   margin-left: auto;
   margin-top: 400px;
+
+  @media screen and (max-width: 576px) {
+    transform: translate(-14px, -50px);
+  }
 }
 
 .buttondl {

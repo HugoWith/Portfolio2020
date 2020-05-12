@@ -1,6 +1,10 @@
 #contact {
   margin: 25vh 10%;
   width: 30%;
+
+  @media screen and (max-width: 576px) {
+    width: 80%;
+  }
 }
 
 .alert-error {
@@ -38,10 +42,16 @@
 .groupinput {
   position: relative;
   margin-bottom: 10px;
+  @media screen and (max-width: 576px) {
+    margin-bottom: 3px;
+  }
 }
 
 #groupinputemail {
   margin-top: 40px;
+  @media screen and (max-width: 576px) {
+    margin-top: 5px;
+  }
 }
 
 .inputform {
@@ -51,6 +61,9 @@
   width: 100%;
   border: none;
   border-bottom: 1px solid #757575;
+  @media screen and (max-width: 576px) {
+    font-size: 10px;
+  }
 }
 .inputform:focus {
   outline: none;
@@ -68,6 +81,9 @@
   transition: 0.2s ease all;
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
+  @media screen and (max-width: 576px) {
+    font-size: 10px;
+  }
 }
 
 /* active state */
@@ -76,6 +92,9 @@
   top: -20px;
   font-size: 14px;
   color: #3fb5aa;
+  @media screen and (max-width: 576px) {
+    font-size: 10px;
+  }
 }
 
 /* BOTTOM BARS ================================= */
@@ -153,5 +172,11 @@
   to {
     width: 0;
     background: transparent;
+  }
+}
+
+.submit {
+  @media screen and (max-width: 576px) {
+    transform: translateY(-15px);
   }
 }
