@@ -245,6 +245,7 @@ section h1 {
   margin-top: 60px;
   transition: 0.8s ease-in-out;
   animation: btn-pulse 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
+  transform: translate(-25px, -100px);
   @media screen and (max-width: 576px) {
     transform: translate(16px, -256px);
     width: 10%;
@@ -258,6 +259,7 @@ section h1 {
   margin-top: 60px;
   transition: 0.8s ease-in-out;
   animation: btn-pulse 1s infinite cubic-bezier(0.66, 0, 0, 1);
+  transform: translate(-25px, -100px);
 
   @media screen and (max-width: 576px) {
     transform: translate(16px, -256px);
