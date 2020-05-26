@@ -21,6 +21,19 @@
   animation-fill-mode: forwards;
 }
 
+.hugoimg--loader {
+  float: right;
+  transform: translate(20%, -80%);
+  @media screen and (max-width: 768px) {
+    margin: 0 auto;
+    transform: translate(0%, -80%);
+  }
+  @media screen and (max-width: 576px) {
+    margin: 0 auto;
+    transform: translate(0%, -80%);
+  }
+}
+
 @keyframes fadeOutLoader {
   100% {
     opacity: 0;

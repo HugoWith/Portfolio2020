@@ -1,0 +1,71 @@
+.title--svgLetter path:nth-of-type(1) {
+  stroke-dasharray: 277;
+  stroke-dashoffset: 277;
+  animation: line-animation 6s ease forwards;
+}
+.title--svgLetter path:nth-of-type(2) {
+  stroke-dasharray: 257;
+  stroke-dashoffset: 257;
+}
+.title--svgLetter path:nth-of-type(3) {
+  stroke-dasharray: 229;
+  stroke-dashoffset: 229;
+}
+.title--svgLetter path:nth-of-type(4) {
+  stroke-dasharray: 214;
+  stroke-dashoffset: 214;
+}
+.title--svgLetter path:nth-of-type(5) {
+  stroke-dasharray: 162;
+  stroke-dashoffset: 162;
+}
+.title--svgLetter path:nth-of-type(6) {
+  stroke-dasharray: 269;
+  stroke-dashoffset: 269;
+}
+.title--svgLetter path:nth-of-type(7) {
+  stroke-dasharray: 222;
+  stroke-dashoffset: 222;
+}
+.title--svgLetter path:nth-of-type(8) {
+  stroke-dasharray: 222;
+  stroke-dashoffset: 222;
+}
+.title--svgLetter path:nth-of-type(9) {
+  stroke-dasharray: 214;
+  stroke-dashoffset: 214;
+}
+.title--svgLetter path:nth-of-type(10) {
+  stroke-dasharray: 265;
+  stroke-dashoffset: 265;
+}
+.title--svgLetter path:nth-of-type(11) {
+  stroke-dasharray: 279;
+  stroke-dashoffset: 279;
+}
+.title--svgLetter path:nth-of-type(12) {
+  stroke-dasharray: 184;
+  stroke-dashoffset: 184;
+}
+.title--svgLetter path:nth-of-type(13) {
+  stroke-dasharray: 279;
+  stroke-dashoffset: 279;
+}
+.title--svgLetter path:nth-of-type(14) {
+  stroke-dasharray: 269;
+  stroke-dashoffset: 269;
+}
+.title--svgLetter path:nth-of-type(15) {
+  stroke-dasharray: 304;
+  stroke-dashoffset: 304;
+}
+.title--svgLetter path:nth-of-type(16) {
+  stroke-dasharray: 171;
+  stroke-dashoffset: 171;
+}
+
+@keyframes line-animation {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
