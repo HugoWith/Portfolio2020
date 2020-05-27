@@ -1,350 +1,305 @@
 
- <div class="loader ">
- <%= image_tag 'BallLoader.svg', class: '' %>
- <h4>J'arrive... 🐢</h4>
- </div>
- <span class="cursor"></span>
- <div class="wrapper context" id="wrapper">
-            
+ <div class="container-big">
+    <div class="loader ">
+        <%= image_tag 'BallLoader.svg', class: '' %>
+        <%= image_tag 'Page_Loader.svg', class: 'hugoimg hugoimg--loader' %>
+    </div>
+        <span class="cursor"></span>
+        <div class="wrapper context" id="wrapper">
         <section class="section s1 " data-anchor="home">
-            <h1 class="">Hello, je suis Hugo</h1>
-            
-         
-         <%# <div id="menu"> 
-             <div class="hamburger">
-                 <div class="line"></div>
-                 <div class="line"></div>
-                 <div class="line"></div>
-             </div>
+                <h1 class="">Hello, je suis Hugo</h1>
+                
+                    <div class="title--liquid">
+                        <h2 class="title--vertical" id="h2numero1">DÉVELOPPEUR FRONT</h2>
+                        <h2 class="title--vertical" id="h2numero2">DÉVELOPPEUR FRONT</h2>
+                    </div>
 
-             <div class="menu-inner">
-                 <ul><a href="#">À propos</a></ul>
-                 <ul><a href="#">Projets</a></ul>
-                 <ul><a href="#">CV</a></ul>
-                 <ul><a href="#">Contact</a></ul>
-             </div>
-        </div> %>
+                
+            <%# <!-- MENU ROND -->
+            <nav class="menu ">
+                <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+                    <label class="menu-open-button" for="menu-open">
+                        <span class="hamburger hamburger-1"></span>
+                        <span class="hamburger hamburger-2"></span>
+                        <span class="hamburger hamburger-3"></span>
+                    </label>    
+                <a href="#about" class="menu-item"> <i class="fa fa-hand-spock"></i> </a>
+                <a href="#project" class="menu-item"> <i class="fa fa-rocket"></i></a>
+                <a href="#cv" class="menu-item"> <i class="fas fa-graduation-cap"></i> </a>
+                <a href="#contacts" class="menu-item"> <i class="fa fa-envelope"></i> </a>
+            </nav>
 
-        <nav class="menu ">
-            <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
-            <label class="menu-open-button" for="menu-open">
-                <span class="hamburger hamburger-1"></span>
-                <span class="hamburger hamburger-2"></span>
-                <span class="hamburger hamburger-3"></span>
-            </label>
-            
-            <a href="#about" class="menu-item"> <i class="fa fa-hand-spock"></i> </a>
-            <a href="#project" class="menu-item"> <i class="fa fa-rocket"></i></a>
-            <a href="#cv" class="menu-item"> <i class="fas fa-graduation-cap"></i> </a>
-            <a href="#contacts" class="menu-item"> <i class="fa fa-envelope"></i> </a>
-  
-  
-        </nav>
-
-
-<!-- filters -->
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-    <defs>
-      <filter id="shadowed-goo">
-          
-          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-          <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
-          <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
-          <feOffset in="shadow" dx="1" dy="1" result="shadow" />
-          <feComposite in2="shadow" in="goo" result="goo" />
-          <feComposite in2="goo" in="SourceGraphic" result="mix" />
-      </filter>
-      <filter id="goo">
-          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-          <feComposite in2="goo" in="SourceGraphic" result="mix" />
-      </filter>
-    </defs>
-</svg>
-
-        <div class="chevron-down"><i class="fas fa-chevron-down"></i></div>
-
+            <!-- filters -->
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                    <filter id="shadowed-goo">        
+                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                        <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+                        <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+                        <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+                        <feComposite in2="shadow" in="goo" result="goo" />
+                        <feComposite in2="goo" in="SourceGraphic" result="mix" />
+                    </filter>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                        <feComposite in2="goo" in="SourceGraphic" result="mix" />
+                    </filter>
+                </defs>
+            </svg> %>
+            <div class="chevron-down"><i class="fas fa-chevron-down"></i></div>
         </section>
 
         <section class="section s2" data-anchor="about">
             <h1 class="bigC">À propos</h1>
             <div class="description bigC">
-            <p>Bonjour,</p>
+                <p>Bonjour,</p>
                 <p>Je suis Hugo, j’ai 27 ans et si vous avez atteri ici, c’est déjà une petite victoire 😉.<br>
                 Après des <span class="text-emphasised">études en marketing,</span> des voyages à l’étranger, des stages et un premier job dans le <span class="text-emphasised">digital chez TF1,</span> j’ai décidé d’entreprendre une <span class="text-emphasised">reconversion professionnelle.</span><br>
                 Pendant une année sabbatique (mais pas trop) en Australie, j’ai commencé à apprendre à coder par moi-même et en rentrant, <span class="text-emphasised">j’ai décidé de suivre la formation du Wagon à Lyon.</span>
                 </p>
                 <p>Après 2 mois intensifs et disons les choses <span class="text-emphasised">passionnants</span>, me voici à présent frais et dispo' pour commencer <span class="text-emphasised">une nouvelle aventure.</span> Aujourd'hui, je suis  <span class="text-emphasised">développeur Web en Freelance</span>, si vous continuez la visite vous verrez les projets auxquels j'ai pu participer et créer. Je suis également professeur assistant au Wagon Lyon ainsi qu'au Wagon Paris. Si ce qui suit vous donne envie de me rencontrer, alors <span class="text-emphasised"> rencontrons-nous.</span>
-                
-
                 </p>
                 <p>A très vite !</p>
             </div>
-            <%= image_tag 'HugoV', class: 'hugoimg h1' %>
-            <%= image_tag 'Hugo_V2', class: 'hugoimg h2' %>
-            <%= image_tag 'Hugo_V3', class: 'hugoimg h3' %>
+                <%= image_tag 'HugoV', class: 'hugoimg h1' %>
+                <%= image_tag 'Hugo_V2', class: 'hugoimg h2' %>
+                <%= image_tag 'Hugo_V3', class: 'hugoimg h3' %>
         </section>
 
+    <!-- PROJET -->
         <section class="section s3" data-anchor="projet">
             <h1 class='bigC'>Projets</h1>
-
-             <div class="slide" data-anchor="llsolidaires"> 
-                <div class="WrapperProject">
-                    <div class="imgPart" target="_blank">
-                    <a href="#" onclick= 'window.open("https://www.les-logements-solidaires.com/")'>
-                        <%= image_tag 'llSolidaireNoBGcopy.png', class: 'ProjectImg paralax'%>
-                    </a>    
-                    </div>
-                    <div class="textPart">
-                        <div class="innerTextPart">
-                            <h3 class="titleProject">Les Logements Solidaires</h3>
-                            <p class="technos">👨‍💻 Ruby - Ruby On Rails - JS - HTML - SASS - PostgreSQL - Geocoder</p>
-                            <p>🚀 Fullstack</p>
-                            <p>✏️ Développé pendant la crise du Covid-19 à l'initiative de @Malt, ce site a pour but de mettre à disposition des appartements aux personnels soignants, proche de leur lieu de travail, directement via les propriétaires.</p>
-                            <div class="btnProject ">
-                              <a class="btn-contact bigC" href='https://www.les-logements-solidaires.com/' target ="_blank"><i class="fas fa-search"></i></a>
-                              <a href="#project/consilium" class="btn-contact bigC projetLink" >Prochain projet<i class="fas fa-chevron-right"></i></a>
-                            </div>
+                <div class="slide" data-anchor="llsolidaires"> 
+                    <div class="WrapperProject">
+                        <div class="imgPart" target="_blank">
+                            <a href="#" onclick= 'window.open("https://www.les-logements-solidaires.com/")'>
+                            <%= image_tag 'llSolidaireNoBGcopy.png', class: 'ProjectImg paralax'%>
+                            </a>    
                         </div>
-                    </div>   
+                        <div class="textPart">
+                            <div class="innerTextPart">
+                                <h3 class="titleProject">Les Logements Solidaires</h3>
+                                <p class="technos">👨‍💻 Ruby - Ruby On Rails - JS - HTML - SASS - PostgreSQL - Geocoder</p>
+                                <p>🚀 Fullstack</p>
+                                <p>✏️ Développé pendant la crise du Covid-19 à l'initiative de @Malt, ce site a pour but de mettre à disposition des appartements aux personnels soignants, proche de leur lieu de travail, directement via les propriétaires.</p>
+                                <div class="btnProject ">
+                                <a class="btn-contact bigC" href='https://www.les-logements-solidaires.com/' target ="_blank"><i class="fas fa-search"></i></a>
+                                <a href="#project/consilium" class="btn-contact bigC projetLink" >Prochain projet<i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
                 </div>
-            </div>
-                
-
-            <div class="slide" data-anchor="consilium"> 
-                <div class="WrapperProject">
-                    <div class="imgPart">
-                        <%= image_tag 'ConsiliumPortfolio4.png', class: 'ProjectImg paralax consiliumImg alertSoon'%>
-                    </div>
-                    <div class="textPart">
-                        <div class="innerTextPart">
-                            <h3 class="titleProject">Consilium</h3>
-                            <p class="technos">👨‍💻 Wordpress - JS - CSS - HTML</p>
-                            <p>🚀 EN COURS DE DEV - Fullstack</p>
-                            <p>✏️ Catalogue, outils de conseil et site internet pour Consilium, PME lyonnaise experte en sécurité incendie</p>
-                            <div class="btnProject bigC">
-                              <a class="btn-contact alertSoon " href='#' target ="_blank"><i class="fas fa-search"></i></a>
-                              <a class="btn-contact projetLink bigC" href='#project/Projet3'>Prochain projet<i class="fas fa-chevron-right"></i></a>
-                            </div>
+                    
+                <div class="slide" data-anchor="consilium"> 
+                    <div class="WrapperProject">
+                        <div class="imgPart">
+                            <%= image_tag 'ConsiliumPortfolio4.png', class: 'ProjectImg paralax consiliumImg alertSoon'%>
                         </div>
-                    </div>   
+                        <div class="textPart">
+                            <div class="innerTextPart">
+                                <h3 class="titleProject">Consilium</h3>
+                                <p class="technos">👨‍💻 Wordpress - JS - CSS - HTML</p>
+                                <p>🚀 EN COURS DE DEV - Fullstack</p>
+                                <p>✏️ Catalogue, outils de conseil et site internet pour Consilium, PME lyonnaise experte en sécurité incendie</p>
+                                <div class="btnProject bigC">
+                                <a class="btn-contact alertSoon " href='#' target ="_blank"><i class="fas fa-search"></i></a>
+                                <a class="btn-contact projetLink bigC" href='#project/Projet3'>Prochain projet<i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
                 </div>
-            </div>
 
-          <div class="slide" data-anchor="Projet3"> 
-                <div class="WrapperProject">
-                    <div class="imgPart">
-                    <a href="#" onclick= 'window.open("https://questcequonmange.firebaseapp.com/")'>
-                        <%= image_tag 'WAWETsmallNobg.png', class: 'ProjectImg paralax wawetImg', id: 'paralax'%>
-                    </a>
-                    </div>
-                    <div class="textPart">
-                        <div class="innerTextPart">
-                            <h3 class="titleProject">What are we eating tonight ? - Mobile</h3>
-                            <p class="technos">👨‍💻 VueJS - JS - Firebase - Firestore - Axios - SCSS - HTML</p>
-                            <p>🚀 Fullstack </p>
-                            <p>✏️ Pas d'idée pour le repas de ce soir. Cette webApp exclusivement mobile devrait pouvoir vous aider.</p>
-                            <div class="btnProject bigC">
-                              <a class="btn-contact " href='https://questcequonmange.firebaseapp.com/' target ="_blank"><i class="fas fa-search"></i></a>
-                              <a class="btn-contact projetLink bigC" href='#project/Projet4'>Prochain projet<i class="fas fa-chevron-right"></i></a>
-                            </div>
-                        </div>
-                    </div>   
-                 </div>
-            </div>
-
-            <div class="slide" data-anchor="Projet4"> 
-                <div class="WrapperProject">
-                    <div class="imgPart">
-                        <a href="#" onclick= 'window.open("https://www.quiabete.co/")'>
-                            <%= image_tag 'QAB.png', class: 'ProjectImg paralax '%>
+            <div class="slide" data-anchor="Projet3"> 
+                    <div class="WrapperProject">
+                        <div class="imgPart">
+                        <a href="#" onclick= 'window.open("https://questcequonmange.firebaseapp.com/")'>
+                            <%= image_tag 'WAWETsmallNobg.png', class: 'ProjectImg paralax wawetImg', id: 'paralax'%>
                         </a>
-                    </div>
-                    <div class="textPart">
-                        <div class="innerTextPart">
-                            <h3 class="titleProject">Qui a beté ?</h3>
-                            <p class="technos">👨‍💻 Ruby - Ruby On Rails - JS - HTML - SASS - Postgre - OmniAuth - Notification Push </p>
-                            <p>🚀 Fullstack</p>
-                            <p>✏️ Paris entre amis. Pariez sur absolument tout et n'importe quoi, vraiment n'importe quoi !</p>
-                            <div class="btnProject bigC">
-                              <a class="btn-contact " href='https://www.quiabete.co/' target ="_blank"><i class="fas fa-search"></i></a>
-                              <a class="btn-contact projetLink bigC" href='#project/Projet5' >Prochain projet<i class="fas fa-chevron-right"></i></a>
-                            </div>
                         </div>
-                    </div>   
+                        <div class="textPart">
+                            <div class="innerTextPart">
+                                <h3 class="titleProject">What are we eating tonight ? - Mobile</h3>
+                                <p class="technos">👨‍💻 VueJS - JS - Firebase - Firestore - Axios - SCSS - HTML</p>
+                                <p>🚀 Fullstack </p>
+                                <p>✏️ Pas d'idée pour le repas de ce soir. Cette webApp exclusivement mobile devrait pouvoir vous aider.</p>
+                                <div class="btnProject bigC">
+                                <a class="btn-contact " href='https://questcequonmange.firebaseapp.com/' target ="_blank"><i class="fas fa-search"></i></a>
+                                <a class="btn-contact projetLink bigC" href='#project/Projet4'>Prochain projet<i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
                 </div>
-            </div>
 
-          <div class="slide" data-anchor="Projet5"> 
+                <div class="slide" data-anchor="Projet4"> 
+                    <div class="WrapperProject">
+                        <div class="imgPart">
+                            <a href="#" onclick= 'window.open("https://www.quiabete.co/")'>
+                                <%= image_tag 'QAB.png', class: 'ProjectImg paralax '%>
+                            </a>
+                        </div>
+                        <div class="textPart">
+                            <div class="innerTextPart">
+                                <h3 class="titleProject">Qui a beté ?</h3>
+                                <p class="technos">👨‍💻 Ruby - Ruby On Rails - JS - HTML - SASS - Postgre - OmniAuth - Notification Push </p>
+                                <p>🚀 Fullstack</p>
+                                <p>✏️ Paris entre amis. Pariez sur absolument tout et n'importe quoi, vraiment n'importe quoi !</p>
+                                <div class="btnProject bigC">
+                                <a class="btn-contact " href='https://www.quiabete.co/' target ="_blank"><i class="fas fa-search"></i></a>
+                                <a class="btn-contact projetLink bigC" href='#project/Projet5' >Prochain projet<i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+
+            <div class="slide" data-anchor="Projet5"> 
+                    <div class="WrapperProject">
+                        <div class="imgPart">
+                            <a href="#" onclick= 'window.open("https://studiozerancecopycat.firebaseapp.com/")'>
+                                <%= image_tag 'StudioZeranceSmall-min.png', class: 'ProjectImg paralax '%>
+                            </a>
+                        </div>
+                        <div class="textPart">
+                            <div class="innerTextPart">
+                                <h3 class="titleProject">Studio Zérance - Intégration</h3>
+                                <p class="technos">👨‍💻 VueJS - JS - HTML - SASS  </p>
+                                <p>🚀 Intégration</p>
+                                <p>✏️ Intégration de la Home page de Studio Zérance</p>
+                                <div class="btnProject bigC">
+                                <a class="btn-contact " href='https://studiozerancecopycat.firebaseapp.com/' target ="_blank"><i class="fas fa-search"></i></a>
+                                <a class="btn-contact projetLink bigC" href='#project/Projet6'>Prochain projet<i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+
+            <div class="slide" data-anchor="Projet6"> 
                 <div class="WrapperProject">
-                    <div class="imgPart">
-                        <a href="#" onclick= 'window.open("https://studiozerancecopycat.firebaseapp.com/")'>
-                            <%= image_tag 'StudioZeranceSmall-min.png', class: 'ProjectImg paralax '%>
-                        </a>
-                    </div>
-                    <div class="textPart">
-                        <div class="innerTextPart">
-                            <h3 class="titleProject">Studio Zérance - Intégration</h3>
-                            <p class="technos">👨‍💻 VueJS - JS - HTML - SASS  </p>
-                            <p>🚀 Intégration</p>
-                            <p>✏️ Intégration de la Home page de Studio Zérance</p>
-                            <div class="btnProject bigC">
-                              <a class="btn-contact " href='https://studiozerancecopycat.firebaseapp.com/' target ="_blank"><i class="fas fa-search"></i></a>
-                              <a class="btn-contact projetLink bigC" href='#project/Projet6'>Prochain projet<i class="fas fa-chevron-right"></i></a>
-                            </div>
+                        <div class="imgPart">
+                            <%= image_tag 'Votreprojet-min.png', class: 'ProjectImg paralax '%>
                         </div>
-                    </div>   
-                </div>
-            </div>
-
-          <div class="slide" data-anchor="Projet6"> 
-             <div class="WrapperProject">
-                    <div class="imgPart">
-                        <%= image_tag 'Votreprojet-min.png', class: 'ProjectImg paralax '%>
-                    </div>
-                    <div class="textPart">
-                        <div class="innerTextPart">
-                            <h3 class="titleProject">Envie de travailler ensemble ?</h3>
-                            <p class="technos">👨‍💻 Ruby - RubyOnRails - VueJS - JS - HTML - SASS - Wordpress  </p>
-                            <p>🚀 Fullstack - Front-End - UX/UI </p>
-                            <p>✏️ Si vous voulez en avoir un petit peu plus n'hésitez pas à me contacter, j'ai quelques petits projets, intégrations dans les tiroirs !  </p>
-                            <div class="btnProject bigC">
-                              <a class="btn-contact alertCurious" href='#'><i class="fas fa-search"></i></a>
-                              <a class="btn-contact projetLink bigC" href='#project/llsolidaires'><i class="fas fa-chevron-left"></i>  On repart ?</a>
+                        <div class="textPart">
+                            <div class="innerTextPart">
+                                <h3 class="titleProject">Envie de travailler ensemble ?</h3>
+                                <p class="technos">👨‍💻 Ruby - RubyOnRails - VueJS - JS - HTML - SASS - Wordpress  </p>
+                                <p>🚀 Fullstack - Front-End - UX/UI </p>
+                                <p>✏️ Si vous voulez en avoir un petit peu plus n'hésitez pas à me contacter, j'ai quelques petits projets, intégrations dans les tiroirs !  </p>
+                                <div class="btnProject bigC">
+                                <a class="btn-contact alertCurious" href='#'><i class="fas fa-search"></i></a>
+                                <a class="btn-contact projetLink bigC" href='#project/llsolidaires'><i class="fas fa-chevron-left"></i>  On repart ?</a>
+                                </div>
                             </div>
-                        </div>
-                    </div>   
+                        </div>   
+                    </div>
                 </div>
-            </div>
-                   
-    </section>
+        </section>
 
         <section class="section s4" data-anchor="cv">
             <h1 class="">Vie Pro</h1> 
+                <div class="slide" data-anchor="formation"> 
+                    <h2 class="titres">Formations</h2>
+                        <ul class="progressbar">
+                            <li class="active">Avant ça c'est vieux ... 📠 <br>
+                                <p>1992 - 2013</p>
+                            </li>
+                            <li class="active">KEDGE BUSINESS SCHOOL - BORDEAUX
+                                <p>2013 - 2017</p>
+                                <%= image_tag 'KEDGE-logo.png', class: 'logo-kedge' %>
+                            </li>
+                            <li>LE WAGON - LYON
+                                <p>2019</p>
+                                <%= image_tag 'le-wagon-color.png', class: 'logo-wagon' %>
+                            </li>
+                        </ul>
 
-            <div class="slide" data-anchor="formation"> 
-            <h2 class="titres">Formations</h2>
-            <ul class="progressbar">
-                <li class="active">Avant ça c'est vieux ... 📠 <br>
-                
-                    <p>1992 - 2013</p>
-                    <%# <%= image_tag 'logo-iut-Roanne.png', class: 'logo-roanne' %> 
-                </li>
-                <li class="active">KEDGE BUSINESS SCHOOL - BORDEAUX
-                    <p>2013 - 2017</p>
-                    <%= image_tag 'KEDGE-logo.png', class: 'logo-kedge' %>
-                </li>
-                
-                <li>LE WAGON - LYON
-                    <p>2019</p>
-                    <%= image_tag 'le-wagon-color.png', class: 'logo-wagon' %>
-                </li>
-            </ul>
-   
-<div id="intro">
-    <div id="intro-content" class="center-content">
-        <div class="center-content-inner">
-            <div class="content-section content-section-margin">
-                <%# <div class="content-section-grid clearfix"> %>
-                    <%# <a href="#" class="buttondl nav-link"> %>
-                    <%= link_to download_pdf_path, target: "_blank", class: 'buttondl nav-link' do %>
-                        <div class="bottom"></div>
-                            <div class="top">
-                                <div class="label">Télécharger mon CV</div>
-                                    <div class="buttondl-border buttondl-border-left"></div>
-                                    <div class="buttondl-border buttondl-border-top"></div>
-                                    <div class="buttondl-border buttondl-border-right"></div>
-                                    <div class="buttondl-border buttondl-border-bottom"></div>
+    <!-- BOUTON TELECHARGER CV -->  
+                    <div id="intro">
+                        <div id="intro-content" class="center-content">
+                            <div class="center-content-inner">
+                                <div class="content-section content-section-margin">
+                                    <%= link_to download_pdf_path, target: "_blank", class: 'buttondl nav-link' do %>
+                                    <div class="bottom"></div>
+                                    <div class="top">
+                                        <div class="label">Télécharger mon CV</div>
+                                            <div class="buttondl-border buttondl-border-left"></div>
+                                            <div class="buttondl-border buttondl-border-top"></div>
+                                            <div class="buttondl-border buttondl-border-right"></div>
+                                            <div class="buttondl-border buttondl-border-bottom"></div>
+                                    </div>
+                                    <% end %>
+                                </div>
                             </div>
-                        <% end %>
-                    <%# </a> %>
-                <%# </div> %>
-            </div>
-        </div>
-    </div>  
-</div>
-<a href="#cv/exp" class="blog-slider__button" id="buttonform"><i class="fas fa-angle-double-right"></i></a>
+                        </div>  
+                    </div>
+                    <a href="#cv/exp" class="blog-slider__button" id="buttonform"><i class="fas fa-angle-double-right"></i></a>
+                </div>
 
-             <%# <div class="slide_button">
-                <a href="#exp">Button Test</a>
-            </div> %>
-            </div>
+                <div class="slide" data-anchor="exp"> 
+                    <h2 class="titres">Expériences</h2>
+                        <ul class="progressbar">
+                            <li class="active entreprise">PIERRE & VACANCES
+                                <div id="detail-description">
+                                    <p class="exp-description">2016</p>
+                                    <p class="exp-description">Assistant chef de produit</p>
+                                    <%= image_tag 'logo-pierre-vacances.png', class: 'logo-pvcp' %>
+                                </div>
+                            </li>
+                            <li class="active entreprise">FRANCE TÉLÉVISION
+                                <div id="detail-description">
+                                    <p class="exp-description">2017</p>
+                                    <p class="exp-description">Assistant chef de produit digital</p>
+                                    <%= image_tag 'logoftp.png', class: 'logo-ftp' %>
+                                </div>
+                            </li>
+                            <li class="entreprise">TF1 PUBLICITÉ
+                                <div id="detail-description">
+                                    <p class="exp-description">2017 - 2018</p>
+                                    <p class="exp-description">Chef de produit digital</p>
+                                    <%= image_tag 'logoTFP.png', class: 'logo-tfp' %>
+                                </div>
+                            </li>
+                        </ul>
 
-            <div class="slide" data-anchor="exp"> 
-                <h2 class="titres">Expériences</h2>
-                    <ul class="progressbar">
-                        <li class="active entreprise">PIERRE & VACANCES
-                            <div id="detail-description">
-                                <p class="exp-description">2016</p>
-                                <p class="exp-description">Assistant chef de produit</p>
-                                <%= image_tag 'logo-pierre-vacances.png', class: 'logo-pvcp' %>
+                    <!-- BOUTON TELECHARGER CV -->  
+                    <div id="intro">
+                        <div id="intro-content" class="center-content">
+                            <div class="center-content-inner">
+                                <div class="content-section content-section-margin">
+                                    <%= link_to download_pdf_path, target: "_blank", class: 'buttondl nav-link' do %>
+                                    <div class="bottom"></div>
+                                    <div class="top">
+                                        <div class="label">Télécharger mon CV</div>
+                                            <div class="buttondl-border buttondl-border-left"></div>
+                                            <div class="buttondl-border buttondl-border-top"></div>
+                                            <div class="buttondl-border buttondl-border-right"></div>
+                                            <div class="buttondl-border buttondl-border-bottom"></div>
+                                        </div>
+                                    <% end %>   
+                                </div>
                             </div>
-                        </li>
-
-                        <li class="active entreprise">FRANCE TÉLÉVISION
-                        <div id="detail-description">
-                            <p class="exp-description">2017</p>
-                            <p class="exp-description">Assistant chef de produit digital</p>
-                            <%= image_tag 'logoftp.png', class: 'logo-ftp' %>
                         </div>
-                        </li>
-                        <li class="entreprise">TF1 PUBLICITÉ
-                        <div id="detail-description">
-                            <p class="exp-description">2017 - 2018</p>
-                            <p class="exp-description">Chef de produit digital</p>
-                            <%= image_tag 'logoTFP.png', class: 'logo-tfp' %>
-                        </div>
-                        </li>
-                </ul>
-
-<div id="intro">
-    <div id="intro-content" class="center-content">
-        <div class="center-content-inner">
-            <div class="content-section content-section-margin">
-                <%# <div class="content-section-grid clearfix"> %>
-                    <%# <a href="../../app/assets/files/CVHV.pdf" download="proposed_file_name.pdf" class="buttondl nav-link"> %>
-                    <%= link_to download_pdf_path, target: "_blank", class: 'buttondl nav-link' do %>
-                        <div class="bottom"></div>
-                            <div class="top">
-                            
-                                <div class="label">Télécharger mon CV</div>
-                                
-                                    <div class="buttondl-border buttondl-border-left"></div>
-                                    <div class="buttondl-border buttondl-border-top"></div>
-                                    <div class="buttondl-border buttondl-border-right"></div>
-                                    <div class="buttondl-border buttondl-border-bottom"></div>
-                       </div>
-                         <% end %>   
-                    <%# </a> %>
-                <%# </div> %>
-            </div>
-        </div>
-    </div>
-</div>
-<a href="#cv/formation" class="blog-slider__button" id="buttonexp"><i class="fas fa-angle-double-left"></i></a>
-
-
-
-                <%# <div class="slide_button">
-                    <a href="#formation">Button Test</a>
-                </div> %>
-            </div>
-           
+                    </div>
+                    <a href="#cv/formation" class="blog-slider__button" id="buttonexp"><i class="fas fa-angle-double-left"></i></a>
+                </div>           
         </section>
 
         <section class="section s5" data-anchor="contacts">
-            <h1 class="">Contact</h1>
-           
-            <div id="contact">
-            <%= render 'contact_form' %>
-            </div>
-
-            <div>
-                <%= image_tag 'Page_contact', class: 'hugoimg h4', id:'hugoimgContact' %>
-            </div>
+            <h1 class="">Contact</h1>   
+                <div id="contact">
+                    <%= render 'contact_form' %>
+                </div>
+                <div>
+                    <%= image_tag 'Page_contact', class: 'hugoimg h4', id:'hugoimgContact' %>
+                </div>
         </section>
 </div>
+
   
 
 

@@ -19,6 +19,11 @@ a {
   cursor: none;
 }
 
+.container-big {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
 .cursor {
   width: 20px;
   height: 20px;
@@ -52,6 +57,15 @@ a {
     display: none;
   }
 }
+// BULLET POINT
+#fp-nav ul li a span {
+  background: #3fb5aa;
+}
+
+// .title--vertical {
+//   writing-mode: vertical-rl;
+//   text-orientation: mixed;
+// }
 
 /* section {
     height: 90vh;

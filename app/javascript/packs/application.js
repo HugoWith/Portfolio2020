@@ -18,6 +18,7 @@ import { cursor } from "../components/cursor";
 import { imgParallax } from "../components/imgParallax";
 import { alert } from "../components/alert";
 import { loader } from "../components/loader";
+import { animSvg } from "../components/animsvg";
 // initFullPageJs();
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
@@ -32,3 +33,4 @@ cursor();
 imgParallax();
 alert();
 loader();
+animSvg();
