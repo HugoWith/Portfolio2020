@@ -1,9 +1,16 @@
 const animSvg = () => {
-  let path = document.querySelectorAll(".title--svgLetter path");
-  console.log(path);
-  for (let i = 0; i < path.length; i++) {
-    console.log(`${i} test ${path[i].getTotalLength()}`);
-  }
+  let allh2 = document.querySelector(".title--vertical");
+  allh2.addEventListener("mouseover", (e) => {
+    let liquidText = document.querySelector("#h2numero1");
+    liquidText.classList.add("animation--text");
+  });
+
+  allh2.addEventListener("mouseleave", (e) => {
+    let liquidText = document.querySelector("#h2numero1");
+    setTimeout(() => {
+      liquidText.classList.remove("animation--text");
+    }, 3000);
+  });
 };
 
 export { animSvg };
