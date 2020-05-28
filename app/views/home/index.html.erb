@@ -54,18 +54,20 @@
         <section class="section s2" data-anchor="about">
             <h1 class="bigC">À propos</h1>
             <div class="description bigC">
-                <p>Bonjour,</p>
-                <p>Je suis Hugo, j’ai 27 ans et si vous avez atteri ici, c’est déjà une petite victoire 😉.<br>
+                <p id="about--text">Bonjour,</p>
+                <p id="about--text">Je suis Hugo, j’ai 27 ans et si vous avez atteri ici, c’est déjà une petite victoire 😉.<br>
                 Après des <span class="text-emphasised">études en marketing,</span> des voyages à l’étranger, des stages et un premier job dans le <span class="text-emphasised">digital chez TF1,</span> j’ai décidé d’entreprendre une <span class="text-emphasised">reconversion professionnelle.</span><br>
                 Pendant une année sabbatique (mais pas trop) en Australie, j’ai commencé à apprendre à coder par moi-même et en rentrant, <span class="text-emphasised">j’ai décidé de suivre la formation du Wagon à Lyon.</span>
                 </p>
-                <p>Après 2 mois intensifs et disons les choses <span class="text-emphasised">passionnants</span>, me voici à présent frais et dispo' pour commencer <span class="text-emphasised">une nouvelle aventure.</span> Aujourd'hui, je suis  <span class="text-emphasised">développeur Web en Freelance</span>, si vous continuez la visite vous verrez les projets auxquels j'ai pu participer et créer. Je suis également professeur assistant au Wagon Lyon ainsi qu'au Wagon Paris. Si ce qui suit vous donne envie de me rencontrer, alors <span class="text-emphasised"> rencontrons-nous.</span>
+                <p id="about--text">Après 2 mois intensifs et disons les choses <span class="text-emphasised">passionnants</span>, me voici à présent frais et dispo' pour commencer <span class="text-emphasised">une nouvelle aventure.</span> Aujourd'hui, je suis  <span class="text-emphasised">développeur Web en Freelance</span>, si vous continuez la visite vous verrez les projets auxquels j'ai pu participer et créer. Je suis également professeur assistant au Wagon Lyon ainsi qu'au Wagon Paris. Si ce qui suit vous donne envie de me rencontrer, alors <span class="text-emphasised"> rencontrons-nous.</span>
                 </p>
-                <p>A très vite !</p>
+                <p id="about--text">A très vite !</p>
             </div>
-                <%= image_tag 'HugoV', class: 'hugoimg h1' %>
-                <%= image_tag 'Hugo_V2', class: 'hugoimg h2' %>
-                <%= image_tag 'Hugo_V3', class: 'hugoimg h3' %>
+                 <div class="hugoimg--move"></div>
+                <%= image_tag 'Hugo_about_V2.svg', class: 'hugoimg h1 hugoimg--move', id: 'hugo--about1' %>
+                <%= image_tag 'Hugo_about_V3.svg', class: 'hugoimg h1 hugoimg--move', id: 'hugo--about2' %>
+                <%#= image_tag 'Hugo_V2', class: 'hugoimg h2' %>
+                <%#= image_tag 'Hugo_V3', class: 'hugoimg h3' %>
         </section>
 
     <!-- PROJET -->

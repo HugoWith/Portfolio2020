@@ -73,6 +73,7 @@ a {
 
 section h1 {
   font-family: "Oswald", sans-serif;
+  margin: 0 auto;
 }
 
 .s1 {
@@ -195,6 +196,21 @@ section h1 {
     left: 27%;
     transform: translate(70%, -70%);
     object-fit: contain;
+  }
+}
+
+.hugoimg--move {
+  transform: translate(40%, -77%);
+  width: 30%;
+}
+
+.hiddenImg {
+  animation: fadeOutImg 2s ease-in-out forwards;
+}
+
+@keyframes fadeOutImg {
+  100% {
+    opacity: 0;
   }
 }
 
