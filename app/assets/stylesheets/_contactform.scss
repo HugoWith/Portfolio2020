@@ -1,6 +1,7 @@
 #contact {
-  margin: 25vh 10%;
+  margin: 0% 10%;
   width: 30%;
+  transform: translate(10px, 5%);
 
   @media screen and (max-width: 576px) {
     width: 80%;
@@ -55,8 +56,8 @@
 }
 
 .inputform {
-  font-size: 14px;
-  padding: 10px 10px 10px 5px;
+  font-size: 12px;
+  padding: 5px 5px 5px 5px;
   display: block;
   width: 100%;
   border: none;
@@ -72,7 +73,7 @@
 /* .LABELform ======================================= */
 .labelform {
   color: #a0d3ad;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: normal;
   position: relative;
   pointer-events: none;

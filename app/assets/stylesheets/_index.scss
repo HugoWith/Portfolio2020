@@ -13,6 +13,11 @@ html {
 
 p {
   font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+
+li {
+  font-size: 12px;
 }
 
 a {
@@ -28,9 +33,10 @@ a {
   position: absolute;
   background: #f5f100;
   z-index: 1;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   border: 1px solid white;
+  mix-blend-mode: exclusion;
   border-radius: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -87,7 +93,7 @@ section h1 {
   animation: bg-jump 8s infinite;
 }
 .section h1 {
-  font-size: 64px;
+  font-size: 46px;
   position: absolute;
   top: 10%;
   left: 50%;
@@ -244,7 +250,7 @@ section h1 {
   margin-top: 10%;
   width: 50%;
   margin-left: 5%;
-  font-size: 20px;
+  font-size: 12px;
 
   @media screen and (max-width: 1200px) {
     p {
@@ -290,11 +296,11 @@ section h1 {
 #buttonform {
   text-decoration: none;
   float: right;
-  margin-right: 30px;
-  margin-top: 60px;
   transition: 0.8s ease-in-out;
   animation: btn-pulse 1.5s infinite cubic-bezier(0.66, 0, 0, 1);
-  transform: translate(-25px, -100px);
+  transform: translate(-114%, -60%);
+  padding: 10px 20px 10px 20px;
+  font-size: 12px;
   @media screen and (max-width: 576px) {
     transform: translate(16px, -256px);
     width: 10%;
@@ -304,11 +310,11 @@ section h1 {
 #buttonexp {
   text-decoration: none;
   float: right;
-  margin-right: 30px;
-  margin-top: 60px;
   transition: 0.8s ease-in-out;
   animation: btn-pulse 1s infinite cubic-bezier(0.66, 0, 0, 1);
-  transform: translate(-25px, -100px);
+  transform: translate(-114%, -60%);
+  padding: 10px 20px 10px 20px;
+  font-size: 12px;
 
   @media screen and (max-width: 576px) {
     transform: translate(16px, -256px);
@@ -316,17 +322,17 @@ section h1 {
   }
 }
 
-#buttonexp:hover {
-  color: #ebe720;
-  transition: 0.8s ease-in-out;
-  padding: 30px;
-}
+// #buttonexp:hover {
+//   color: #ebe720;
+//   transition: 0.8s ease-in-out;
+//   padding: 30px;
+// }
 
-#buttonform:hover {
-  color: #ebe720;
-  transition: 0.8s ease-in-out;
-  padding: 30px;
-}
+// #buttonform:hover {
+//   color: #ebe720;
+//   transition: 0.8s ease-in-out;
+//   transform: scale(1.5);
+// }
 
 @keyframes btn-pulse {
   0% {

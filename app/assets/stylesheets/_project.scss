@@ -51,11 +51,11 @@
 
 .textPart {
   background: white;
-  height: 360px;
+  height: 290px;
   width: 85%;
   border-radius: 180px;
   box-shadow: 2px 2px 15px rgba(160, 211, 173, 0.5);
-  transform: translate(27%, -120%);
+  transform: translate(29%, -106%);
   z-index: 1;
   position: relative;
   padding: 10px;
@@ -95,7 +95,6 @@
 .innerTextPart {
   margin: 0 auto;
   width: 50%;
-  margin-top: 5%;
 }
 
 .btnProject {
@@ -108,7 +107,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 20px;
   margin-bottom: 25px;
 }
 
