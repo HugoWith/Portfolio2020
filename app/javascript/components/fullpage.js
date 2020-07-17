@@ -17,6 +17,7 @@ const initFullPageJs = () => {
       if (destination.index === 1) {
         const hugoimg = document.querySelectorAll(".hugoimg");
         const description = document.querySelector(".description");
+        const revealImg = document.querySelector(".reveal-img");
         tl.staggerFrom(
           "#about--text",
           1.5,
@@ -25,6 +26,11 @@ const initFullPageJs = () => {
             ease: Circ.easeOut,
           },
           0.3
+        );
+        tl.fromTo(
+          revealImg,
+          { x: "0%", duration: 0.3 },
+          { x: "100%", duration: 1.5 }
         );
 
         // tl.fromTo(

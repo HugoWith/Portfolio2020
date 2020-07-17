@@ -158,11 +158,25 @@ section h1 {
 
 .reveal-img {
   position: absolute;
-  width: 100%;
-  height: 150%;
-  background: #55bbab;
-  left: 0;
-  top: -15%;
+  width: 34%;
+  height: 58%;
+  background: #e2f1df;
+  left: 60%;
+  top: 30%;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
 }
 
 .hugoimg {
@@ -174,32 +188,29 @@ section h1 {
   object-fit: contain;
 
   @media screen and (max-width: 1200px) {
-    width: 51%;
-    height: 42%;
-    position: absolute;
-    top: 95%;
-    left: 27%;
-    transform: translate(70%, -70%);
-    object-fit: contain;
+    display: none;
   }
 
   @media screen and (max-width: 992px) {
-    width: 51%;
-    height: 42%;
-    position: absolute;
-    top: 95%;
-    left: 27%;
-    transform: translate(70%, -70%);
-    object-fit: contain;
+    display: none;
   }
   @media screen and (max-width: 768px) {
-    width: 51%;
-    height: 42%;
-    position: absolute;
-    top: 95%;
-    left: 27%;
-    transform: translate(70%, -70%);
-    object-fit: contain;
+    display: none;
+  }
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
+}
+
+.hugoimg--move {
+  transform: translate(40%, -77%);
+  width: 30%;
+  @media screen and (max-width: 1200px) {
+  }
+
+  @media screen and (max-width: 992px) {
+  }
+  @media screen and (max-width: 768px) {
   }
   @media screen and (max-width: 576px) {
     width: 51%;
@@ -210,11 +221,6 @@ section h1 {
     transform: translate(70%, -70%);
     object-fit: contain;
   }
-}
-
-.hugoimg--move {
-  transform: translate(40%, -77%);
-  width: 30%;
 }
 
 .hiddenImg {
