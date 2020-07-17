@@ -1,9 +1,11 @@
 const cursor = () => {
   let cursor = document.querySelector(".cursor");
   document.addEventListener("mousemove", (e) => {
-    let clientX = e.clientX;
-    let clientY = e.clientY;
-    cursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
+    // let clientX = e.clientX;
+    // let clientY = e.clientY;
+    // cursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
+    cursor.style.top = e.pageY + "px";
+    cursor.style.left = e.pageX + "px";
   });
 
   let h1 = document.querySelectorAll("h1");

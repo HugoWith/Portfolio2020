@@ -64,8 +64,10 @@
                 <p id="about--text">A très vite !</p>
             </div>
                  <div class="hugoimg--move"></div>
-                <%= image_tag 'Hugo_about_V2.svg', class: 'hugoimg h1 hugoimg--move', id: 'hugo--about1' %>
-                <%= image_tag 'Hugo_about_V3.svg', class: 'hugoimg h1 hugoimg--move', id: 'hugo--about2' %>
+                    <%= image_tag 'Hugo_about_V2.svg', class: 'hugoimg h1 hugoimg--move', id: 'hugo--about1' %>
+                    <%= image_tag 'Hugo_about_V3.svg', class: 'hugoimg h1 hugoimg--move', id: 'hugo--about2' %>
+                    <div class="reveal-img"></div>
+                
                 <%#= image_tag 'Hugo_V2', class: 'hugoimg h2' %>
                 <%#= image_tag 'Hugo_V3', class: 'hugoimg h3' %>
         </section>
@@ -73,7 +75,7 @@
     <!-- PROJET -->
         <section class="section s3" data-anchor="projet">
             <h1 class='bigC'>Projets</h1>
-                <div class="slide" data-anchor="llsolidaires"> 
+             <div class="slide" data-anchor="llsolidaires"> 
                     <div class="WrapperProject">
                         <div class="imgPart" target="_blank">
                             <a href="#" onclick= 'window.open("https://www.les-logements-solidaires.com/")'>
@@ -104,10 +106,30 @@
                             <div class="innerTextPart">
                                 <h3 class="titleProject">Consilium</h3>
                                 <p class="technos">👨‍💻 Wordpress - JS - CSS - HTML</p>
-                                <p>🚀 EN COURS DE DEV - Fullstack</p>
+                                <p>🚀 Fullstack</p>
                                 <p>✏️ Catalogue, outils de conseil et site internet pour Consilium, PME lyonnaise experte en sécurité incendie</p>
                                 <div class="btnProject bigC">
-                                <a class="btn-contact alertSoon " href='#' target ="_blank"><i class="fas fa-search"></i></a>
+                                <a class="btn-contact" href='https://consilium-plan.com/' target ="_blank"><i class="fas fa-search"></i></a>
+                                <a class="btn-contact projetLink bigC" href='#project/snos'>Prochain projet<i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+
+                <div class="slide" data-anchor="snos"> 
+                    <div class="WrapperProject">
+                        <div class="imgPart">
+                            <%= image_tag 'snos.png', class: 'ProjectImg paralax consiliumImg alertSoon'%>
+                        </div>
+                        <div class="textPart">
+                            <div class="innerTextPart">
+                                <h3 class="titleProject">Snos.</h3>
+                                <p class="technos">👨‍💻 JS - CSS - HTML - GSAP - BarbaJS</p>
+                                <p>🚀 Front-End</p>
+                                <p>✏️ Projet personnel qui a pour but de partager de la musique </p>
+                                <div class="btnProject bigC">
+                                <a class="btn-contact" href='https://snos.herokuapp.com/index.html' target ="_blank"><i class="fas fa-search"></i></a>
                                 <a class="btn-contact projetLink bigC" href='#project/Projet3'>Prochain projet<i class="fas fa-chevron-right"></i></a>
                                 </div>
                             </div>

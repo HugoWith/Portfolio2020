@@ -25,32 +25,35 @@ a {
 }
 
 .cursor {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
+  position: absolute;
   background: #f5f100;
-  display: block;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: 10;
-  mix-blend-mode: exclusion;
-  transition: height 200ms ease, width 200ms ease;
+  z-index: 1;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+  transition-property: background, transform;
+  transform-origin: 75% 75%;
+  cursor: none;
 
   &--big {
-    width: 40px;
-    height: 40px;
+    transform: scale(2);
     mix-blend-mode: unset;
-    background-color: transparent;
+    background: transparent;
     border: 1px solid black;
+    cursor: none;
   }
 
   &--bigger {
-    width: 60px;
-    height: 60px;
+    transform: scale(3);
     mix-blend-mode: unset;
-    background-color: transparent;
+    background: transparent;
     border: 1px solid black;
+    cursor: none;
   }
 
   @media screen and (max-width: 576px) {
@@ -152,6 +155,15 @@ section h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   } */
+
+.reveal-img {
+  position: absolute;
+  width: 100%;
+  height: 150%;
+  background: #55bbab;
+  left: 0;
+  top: -15%;
+}
 
 .hugoimg {
   height: 60%;
