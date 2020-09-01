@@ -2,11 +2,11 @@ const initFullPageJs = () => {
   new fullpage("#wrapper", {
     //options here
     licenseKey: "q2NraPV@b1",
-    autoScrolling: true,
-    scrollHorizontally: true,
     controlArrows: false,
     navigation: true,
     keyboardScrolling: true,
+    autoScrolling: true,
+    scrollOverflow: true,
     anchors: ["home", "project", "about", "cv", "contacts"],
     onLeave: (origin, destination, direction) => {
       const section = destination.item;

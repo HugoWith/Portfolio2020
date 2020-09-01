@@ -49,6 +49,30 @@
   z-index: 1;
 }
 
+.skills-wrapper {
+  position: absolute;
+  z-index: 1;
+  transform: translate(16rem, -26rem);
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 45%;
+}
+.list1 {
+  grid-column: 1;
+}
+.list2 {
+  grid-column: 3;
+}
+.skills-wrapper ul {
+  list-style: none;
+  font-family: "Yessica-Regular", serif;
+  font-weight: bold;
+}
+.skills-wrapper ul li {
+  font-size: 30px;
+}
+
 @keyframes flash {
   0% {
     opacity: 0;
