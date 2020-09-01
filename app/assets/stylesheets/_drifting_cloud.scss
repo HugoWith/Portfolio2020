@@ -1,0 +1,99 @@
+.drifting_clouds_right {
+  animation: driftRightFast 70s infinite forwards;
+  position: relative;
+  z-index: 10;
+}
+.drifting_clouds_left {
+  animation: driftLeftFast 80s infinite forwards;
+  position: relative;
+  z-index: 10;
+}
+
+.drifting_clouds_right_slow {
+  animation: driftRightSlow 100s infinite forwards;
+  position: relative;
+  z-index: 10;
+}
+.drifting_clouds_left_slow {
+  animation: driftLeftSlow 100s infinite forwards;
+  position: relative;
+  z-index: 10;
+}
+
+.cloudBig {
+  width: 100px;
+  position: relative;
+  z-index: 10;
+}
+.pouf2,
+.pouf3,
+.pouf4,
+.pouf5 {
+  position: absolute;
+  opacity: 1;
+  font-weight: bold;
+  font-size: 15px;
+  transform: translate(3rem, -5rem);
+  color: #a0d3ad;
+  font-family: "Pacifico", cursive;
+  z-index: 1;
+}
+
+.pouf {
+  position: absolute;
+  animation: flash 1s 1;
+  opacity: 0;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Pacifico", cursive;
+  z-index: 1;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes driftRightFast {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+@keyframes driftRightSlow {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+@keyframes driftLeftFast {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes driftLeftSlow {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.hide-clouds {
+  opacity: 0;
+}

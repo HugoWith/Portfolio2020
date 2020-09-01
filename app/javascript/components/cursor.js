@@ -19,6 +19,16 @@ const cursor = () => {
     });
   });
 
+  let clouds = document.querySelectorAll(".cloudBig");
+  clouds.forEach((cloud) => {
+    cloud.addEventListener("mouseover", (e) => {
+      cursor.classList.add("cursor--bigger");
+    });
+    cloud.addEventListener("mouseleave", (e) => {
+      cursor.classList.remove("cursor--bigger");
+    });
+  });
+
   let link = document.querySelectorAll("a");
   link.forEach((a) => {
     console.log(a);

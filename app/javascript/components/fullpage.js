@@ -7,7 +7,7 @@ const initFullPageJs = () => {
     controlArrows: false,
     navigation: true,
     keyboardScrolling: true,
-    anchors: ["home", "about", "project", "cv", "contacts"],
+    anchors: ["home", "project", "about", "cv", "contacts"],
     onLeave: (origin, destination, direction) => {
       const section = destination.item;
       const title = section.querySelector("h1");

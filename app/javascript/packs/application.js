@@ -9,6 +9,7 @@ require("@rails/activestorage").start();
 require("channels");
 require("fullpage");
 require("vanilla-tilt");
+require("@mojs/core");
 // require("gsap");
 // require("three");
 
@@ -20,6 +21,7 @@ import { alert } from "../components/alert";
 import { loader } from "../components/loader";
 import { animSvg } from "../components/animsvg";
 import { animImg } from "../components/animImgGsap";
+import { burstJs } from "../components/burst";
 // initFullPageJs();
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
@@ -36,3 +38,4 @@ alert();
 loader();
 animSvg();
 animImg();
+burstJs();
