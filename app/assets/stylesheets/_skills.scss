@@ -1,0 +1,31 @@
+.project-preview-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+}
+
+.project-preview {
+  position: fixed;
+  top: 50%;
+  left: 20%;
+  width: 0px;
+  height: 300px;
+  z-index: 10;
+  background-size: cover, no-repeat, 30%;
+  overflow: hidden;
+}
+
+.navigation-item span:before {
+  width: 0;
+  color: #ffffff;
+  overflow: hidden;
+  position: absolute;
+  content: attr(data-text);
+  transition: all 1s cubic-bezier(0.84, 0, 0.08, 0.99);
+}
+
+.navigation-item span:hover:before {
+  width: 100%;
+}

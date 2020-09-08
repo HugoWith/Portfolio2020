@@ -22,6 +22,7 @@ import { loader } from "../components/loader";
 import { animSvg } from "../components/animsvg";
 import { animImg } from "../components/animImgGsap";
 import { burstJs } from "../components/burst";
+import { skills } from "../components/skills";
 // initFullPageJs();
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
@@ -39,3 +40,4 @@ loader();
 animSvg();
 animImg();
 burstJs();
+skills();
