@@ -47,6 +47,36 @@ const burstJs = () => {
       }
     });
   });
+
+  let drift1 = document.querySelector(".drifting_clouds_left_slow");
+  let drift2 = document.querySelector(".drifting_clouds_left");
+  let drift3 = document.querySelector(".drifting_clouds_right_slow");
+  let drift4 = document.querySelector(".drifting_clouds_right");
+  let tl = gsap.timeline({ repeat: -1 });
+  tl.fromTo(
+    ".drifting_clouds_right",
+    { x: "100vw" },
+    { x: "-10vw", duration: 80, ease: Linear.easeNone },
+    "0.2"
+  );
+  tl.fromTo(
+    ".drifting_clouds_left",
+    { x: "-10vw" },
+    { x: "100vw", duration: 80, ease: Linear.easeNone },
+    "0.2"
+  );
+  tl.fromTo(
+    ".drifting_clouds_right_slow",
+    { x: "100vw" },
+    { x: "-10vw", duration: 40, ease: Linear.easeNone },
+    "0.2"
+  );
+  tl.fromTo(
+    ".drifting_clouds_left_slow",
+    { x: "-15vw" },
+    { x: "100vw", duration: 40, ease: Linear.easeNone },
+    "0.2"
+  );
 };
 
 export { burstJs };

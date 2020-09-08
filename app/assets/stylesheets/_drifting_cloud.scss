@@ -1,22 +1,29 @@
 .drifting_clouds_right {
-  animation: driftRightFast 70s infinite forwards;
+  // animation: driftRightFast 70s infinite forwards;
   position: relative;
+  width: fit-content;
   z-index: 10;
 }
 .drifting_clouds_left {
-  animation: driftLeftFast 80s infinite forwards;
+  // animation: driftLeftFast 80s infinite forwards;
   position: relative;
+  width: fit-content;
+
   z-index: 10;
 }
 
 .drifting_clouds_right_slow {
-  animation: driftRightSlow 100s infinite forwards;
+  // animation: driftRightSlow 100s infinite forwards;
+
   position: relative;
+  width: fit-content;
   z-index: 10;
 }
 .drifting_clouds_left_slow {
-  animation: driftLeftSlow 100s infinite forwards;
+  // animation: driftLeftSlow 100s infinite forwards;
+
   position: relative;
+  width: fit-content;
   z-index: 10;
 }
 

@@ -8,24 +8,28 @@
 
 .project-preview {
   position: fixed;
-  top: 50%;
+  top: 30%;
   left: 20%;
   width: 0px;
   height: 300px;
   z-index: 10;
-  background-size: cover, no-repeat, 30%;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
   overflow: hidden;
 }
 
 .navigation-item span:before {
   width: 0;
-  color: #ffffff;
+  color: black;
   overflow: hidden;
   position: absolute;
   content: attr(data-text);
-  transition: all 1s cubic-bezier(0.84, 0, 0.08, 0.99);
+  transition: all 0.5s cubic-bezier(0.84, 0, 0.08, 0.99);
 }
 
 .navigation-item span:hover:before {
   width: 100%;
+}
+.navigation-item span {
+  color: #32afa9;
 }
