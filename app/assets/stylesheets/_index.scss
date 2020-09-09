@@ -67,10 +67,20 @@ a {
     cursor: none;
   }
 
+  .cursor-text {
+    background-size: scale(3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 6px;
+    transform: translate(-50%, -50%);
+  }
+
   @media screen and (max-width: 576px) {
     display: none;
   }
 }
+
 // BULLET POINT
 #fp-nav ul li a span {
   background: #3fb5aa;

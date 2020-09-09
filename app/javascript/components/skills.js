@@ -12,7 +12,7 @@ const skills = () => {
     });
     item.addEventListener("mouseout", () => {
       let timeL = gsap.timeline();
-      timeL.to(".project-preview", 0.5, {
+      timeL.to(".project-preview", 0.8, {
         height: 0,
         width: 0,
         ease: Expo.easeInOut,
@@ -21,16 +21,14 @@ const skills = () => {
     let link1 = document.querySelector(".navigation-link-1");
     let projectP = document.querySelector(".project-preview");
     link1.addEventListener("mouseover", () => {
-      projectP.style.background =
-        "url('http://drive.google.com/uc?export=view&id=1qUO17eHUgOJ19qWskd8zJc9bbj-FWx50')";
+      projectP.style.background = "url('/assets/skills/consilium.png')";
     });
     link1.addEventListener("mouseout", () => {
       projectP.style.background = "none";
     });
     let link2 = document.querySelector(".navigation-link-2");
     link2.addEventListener("mouseover", () => {
-      projectP.style.background =
-        "url('http://drive.google.com/uc?export=view&id=1sucF3rpws01pXGQwZWtocfnzXWe7pNCm')";
+      projectP.style.background = "url('/assets/skills/sz.png')";
     });
     link2.addEventListener("mouseout", () => {
       projectP.style.background = "none";
@@ -38,8 +36,7 @@ const skills = () => {
     let link3 = document.querySelector(".navigation-link-3");
     link3.addEventListener("mouseover", (e) => {
       console.log(e + "hover link 1");
-      projectP.style.background =
-        "url('http://drive.google.com/uc?export=view&id=1jHILpEKsjoZtoglfdQucU11XLtZ1GDqR')";
+      projectP.style.background = "url('/assets/skills/snos.png')";
     });
     link3.addEventListener("mouseout", (e) => {
       console.log(e + "hover link 1");
@@ -48,8 +45,7 @@ const skills = () => {
     let link4 = document.querySelector(".navigation-link-4");
     link4.addEventListener("mouseover", (e) => {
       console.log(e + "hover link 1");
-      projectP.style.background =
-        "url('http://drive.google.com/uc?export=view&id=1RKbtkGbdpJNgbl-E5JrViIfwNAj-Gs3U')";
+      projectP.style.background = "url('/assets/skills/wawet.png')";
     });
     link4.addEventListener("mouseout", (e) => {
       console.log(e + "hover link 1");
@@ -70,7 +66,7 @@ const skills = () => {
     });
     item.addEventListener("mouseout", () => {
       let timeL2 = gsap.timeline();
-      timeL2.to(".project-preview", 0.5, {
+      timeL2.to(".project-preview", 0.8, {
         width: 0,
         height: 0,
         ease: Expo.easeInOut,
@@ -79,8 +75,7 @@ const skills = () => {
     let link8 = document.querySelector(".navigation-link-8");
     let projectP2 = document.querySelector(".project-preview");
     link8.addEventListener("mouseover", (e) => {
-      projectP2.style.background =
-        "url('http://drive.google.com/uc?export=view&id=1bBY9PAFZrEtHc2xCT_HYv-3z0mGXtr6Q')";
+      projectP2.style.background = "url('/assets/skills/qab.png')";
     });
     link8.addEventListener("mouseout", (e) => {
       console.log(e + "out link 8");
@@ -88,23 +83,21 @@ const skills = () => {
     });
     let link9 = document.querySelector(".navigation-link-9");
     link9.addEventListener("mouseover", (e) => {
-      projectP2.style.background = "url(/assets/agile.png)";
+      projectP2.style.background = "url(/assets/skills/agile.png)";
     });
     link9.addEventListener("mouseout", (e) => {
       projectP2.style.background = "none";
     });
     let link11 = document.querySelector(".navigation-link-11");
     link11.addEventListener("mouseover", (e) => {
-      projectP2.style.background =
-        "url('http://drive.google.com/uc?export=view&id=1V2rwxP5E-AU3lAwTKXAQJP7eDpablEfK')";
+      projectP2.style.background = "url('/assets/skills/lls.png')";
     });
     link11.addEventListener("mouseout", (e) => {
       projectP2.style.background = "none";
     });
     let link14 = document.querySelector(".navigation-link-14");
     link14.addEventListener("mouseover", (e) => {
-      projectP2.style.background =
-        "url('http://drive.google.com/uc?export=view&id=1O9hCg2xictNYA6y6D7vxwvm5nDaVuh7a')";
+      projectP2.style.background = "url('/assets/skills/footcourt.png')";
     });
     link14.addEventListener("mouseout", (e) => {
       projectP2.style.background = "none";
