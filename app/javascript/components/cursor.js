@@ -19,6 +19,19 @@ const cursor = () => {
     });
   });
 
+  let clouds = document.querySelectorAll(".cloudBig");
+  let mouseTxt = document.querySelector(".cursor-text");
+  clouds.forEach((cloud) => {
+    cloud.addEventListener("mouseover", (e) => {
+      cursor.classList.add("cursor--bigger");
+      mouseTxt.innerText = "📌";
+    });
+    cloud.addEventListener("mouseleave", (e) => {
+      cursor.classList.remove("cursor--bigger");
+      mouseTxt.innerText = "";
+    });
+  });
+
   let link = document.querySelectorAll("a");
   link.forEach((a) => {
     console.log(a);

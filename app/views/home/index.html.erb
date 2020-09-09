@@ -4,7 +4,9 @@
         <%= image_tag 'BallLoader.svg', class: '' %>
         <%= image_tag 'Page_Loader.svg', class: 'hugoimg hugoimg--loader' %>
     </div>
-        <span class="cursor"></span>
+        <span class="cursor">
+            <span class="cursor-text"></span>
+        </span>
         <div class="wrapper context" id="wrapper">
         <section class="section s1 " data-anchor="home">
                 <h1 class="">Hello, je suis Hugo</h1>
@@ -14,66 +16,10 @@
                         <h2 class="title--vertical" id="h2numero2">DÉVELOPPEUR FRONT</h2>
                     </div>
 
-                
-            <%# <!-- MENU ROND -->
-            <nav class="menu ">
-                <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
-                    <label class="menu-open-button" for="menu-open">
-                        <span class="hamburger hamburger-1"></span>
-                        <span class="hamburger hamburger-2"></span>
-                        <span class="hamburger hamburger-3"></span>
-                    </label>    
-                <a href="#about" class="menu-item"> <i class="fa fa-hand-spock"></i> </a>
-                <a href="#project" class="menu-item"> <i class="fa fa-rocket"></i></a>
-                <a href="#cv" class="menu-item"> <i class="fas fa-graduation-cap"></i> </a>
-                <a href="#contacts" class="menu-item"> <i class="fa fa-envelope"></i> </a>
-            </nav>
-
-            <!-- filters -->
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                <defs>
-                    <filter id="shadowed-goo">        
-                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-                        <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
-                        <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
-                        <feOffset in="shadow" dx="1" dy="1" result="shadow" />
-                        <feComposite in2="shadow" in="goo" result="goo" />
-                        <feComposite in2="goo" in="SourceGraphic" result="mix" />
-                    </filter>
-                    <filter id="goo">
-                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-                        <feComposite in2="goo" in="SourceGraphic" result="mix" />
-                    </filter>
-                </defs>
-            </svg> %>
             <div class="chevron-down"><i class="fas fa-chevron-down"></i></div>
         </section>
 
-        <section class="section s2" data-anchor="about">
-            <h1 class="bigC">À propos</h1>
-            <div class="description bigC">
-                <p id="about--text">Bonjour,</p>
-                <p id="about--text">Je suis Hugo, j’ai 27 ans et si vous avez atteri ici, c’est déjà une petite victoire 😉.<br>
-                Après des <span class="text-emphasised">études en marketing,</span> des voyages à l’étranger, des stages et un premier job dans le <span class="text-emphasised">digital chez TF1,</span> j’ai décidé d’entreprendre une <span class="text-emphasised">reconversion professionnelle.</span><br>
-                Pendant une année sabbatique (mais pas trop) en Australie, j’ai commencé à apprendre à coder par moi-même et en rentrant, <span class="text-emphasised">j’ai décidé de suivre la formation du Wagon à Lyon.</span>
-                </p>
-                <p id="about--text">Après 2 mois intensifs et disons les choses <span class="text-emphasised">passionnants</span>, me voici à présent frais et dispo' pour commencer <span class="text-emphasised">une nouvelle aventure.</span> Aujourd'hui, je suis  <span class="text-emphasised">développeur Web en Freelance</span>, je suis également très sensible à <span class="text-emphasised">l'UX/UI</span>,  si vous continuez la visite vous verrez les projets auxquels j'ai pu participer et créer. Je suis également professeur assistant au Wagon Lyon ainsi qu'au Wagon Paris. Si ce qui suit vous donne envie de me rencontrer, alors <span class="text-emphasised"> rencontrons-nous.</span>
-                </p>
-                <p id="about--text">A très vite !</p>
-            </div>
-                 <div class="hugoimg--move"></div>
-                    <%= image_tag 'Hugo_about_V2.svg', class: 'hugoimg h1 hugoimg--move', id: 'hugo--about1' %>
-                    <%= image_tag 'Hugo_about_V3.svg', class: 'hugoimg h1 hugoimg--move', id: 'hugo--about2' %>
-                    <div class="reveal-img"></div>
-                
-                <%#= image_tag 'Hugo_V2', class: 'hugoimg h2' %>
-                <%#= image_tag 'Hugo_V3', class: 'hugoimg h3' %>
-        </section>
-
-    <!-- PROJET -->
-        <section class="section s3" data-anchor="projet">
+        <section class="section s2" data-anchor="projet">
             <h1 class='bigC'>Projets</h1>
              <div class="slide" data-anchor="llsolidaires"> 
                     <div class="WrapperProject">
@@ -224,91 +170,191 @@
                 </div>
         </section>
 
-        <section class="section s4" data-anchor="cv">
-            <h1 class="">Vie Pro</h1> 
+        <section class="section s3" data-anchor="about">
+            <h1 class="bigC">À propos</h1>
+            <div class="description bigC">
+                <p id="about--text">Bonjour,</p>
+                <p id="about--text">Je suis Hugo, j’ai 27 ans et si vous avez atteri ici, c’est déjà une petite victoire 😉.<br>
+                Après des <span class="text-emphasised">études en marketing,</span> des voyages à l’étranger, des stages et un premier job dans le <span class="text-emphasised">digital chez TF1,</span> j’ai décidé d’entreprendre une <span class="text-emphasised">reconversion professionnelle.</span><br>
+                Pendant une année sabbatique (mais pas trop) en Australie, j’ai commencé à apprendre à coder par moi-même et en rentrant, <span class="text-emphasised">j’ai décidé de suivre la formation du Wagon à Lyon.</span>
+                </p>
+                <p id="about--text">Après 2 mois intensifs et disons les choses <span class="text-emphasised">passionnants</span>, me voici à présent frais et dispo' pour commencer <span class="text-emphasised">une nouvelle aventure.</span> Aujourd'hui, je suis  <span class="text-emphasised">développeur Web en Freelance</span>, je suis également très sensible à <span class="text-emphasised">l'UX/UI</span>,  si vous continuez la visite vous verrez les projets auxquels j'ai pu participer et créer. Je suis également professeur assistant au Wagon Lyon ainsi qu'au Wagon Paris. Si ce qui suit vous donne envie de me rencontrer, alors <span class="text-emphasised"> rencontrons-nous.</span>
+                </p>
+                <p id="about--text">A très vite !</p>
+            </div>
+                 <div class="hugoimg--move"></div>
+                    <%= image_tag 'Hugo_about_V2.svg', class: 'hugoimg h1 hugoimg--move', id: 'hugo--about1' %>
+                    <%= image_tag 'Hugo_about_V3.svg', class: 'hugoimg h1 hugoimg--move', id: 'hugo--about2' %>
+                    <div class="reveal-img"></div>
+                
+                <%#= image_tag 'Hugo_V2', class: 'hugoimg h2' %>
+                <%#= image_tag 'Hugo_V3', class: 'hugoimg h3' %>
+        </section>
+
+    <!-- PROJET -->
+
+        <section class="section s4 skillsPage fp-noscroll" data-anchor="cv">
+            <h1 class="">Mes Compétences</h1> 
                 <div class="slide" data-anchor="formation"> 
-                    <h2 class="titres">Formations</h2>
-                        <ul class="progressbar">
+            <div class="clouds-wrapper">
+                <div class="drifting_clouds_right_slow">
+                    <%= image_tag 'clouds_4', class: 'clouds_4 cloudBig' %>
+                    <p class="pouf3">Pouf</p>
+                </div>
+
+                <div class="drifting_clouds_left">
+                    <%= image_tag 'clouds_3', class: 'clouds_3 cloudBig' %>
+                    <p class="pouf4">Pouf</p>
+                </div>
+
+                <div class="drifting_clouds_right">
+                    <%= image_tag 'clouds_2', class: 'clouds_2 cloudBig' %>
+                    <p class="pouf2">Pouf</p>
+                </div>
+                <div class="drifting_clouds_left_slow">
+                    <%= image_tag 'clouds_5', class: 'clouds_5 cloudBig' %>
+                    <p class="pouf5">Pouf</p>
+                </div>
+            </div>
+            <div class="project-preview-wrapper">
+                <div class="project-preview"></div>
+            </div>
+            <div class="skills-wrapper">
+                <ul class="list1">
+                  <li class="navigation-item">
+                    <a class="navigation-link navigation-link-1" href="#">
+                        <span data-text="HTML">HTML</span>
+                    </a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link navigation-link-2" href="#">
+                        <span data-text="CSS">CSS</span>
+                    </a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link navigation-link-3" href="#">
+                        <span data-text="Javascript">Javascript</span>
+                    </a>
+                  </li>
+                 <li class="navigation-item">
+                    <a class="navigation-link navigation-link-5" href="#">
+                        <span data-text="UI/UX">UI/UX</span>
+                    </a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link navigation-link-4" href="#">
+                        <span data-text="Vue.Js">Vue.Js</span>
+                    </a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link navigation-link-6" href="#">
+                        <span data-text="Bootsrap">Bootsrap</span>
+                    </a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link navigation-link-7" href="#">
+                        <span data-text="Material.UI">Material.UI</span>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="list2">
+                 <li class="navigation-item">
+                    <a class="navigation-link navigation-link-8" href="#">
+                        <span data-text="RoR">RoR</span>
+                    </a>
+                  </li>
+                 <li class="navigation-item">
+                    <a class="navigation-link navigation-link-10" href="#">
+                        <span data-text="Sass">Sass</span>
+                    </a>
+                  </li>
+                 <li class="navigation-item">
+                    <a class="navigation-link navigation-link-9" href="#">
+                        <span data-text="Wordpress">Wordpress</span>
+                    </a>
+                  </li>
+                 <li class="navigation-item">
+                    <a class="navigation-link navigation-link-11" href="#">
+                        <span data-text="PostegreSQL">PostegreSQL</span>
+                    </a>
+                  </li>
+                 <li class="navigation-item">
+                    <a class="navigation-link navigation-link-12" href="#">
+                        <span data-text="Firebase">Firebase</span>
+                    </a>
+                  </li>
+                 <li class="navigation-item">
+                    <a class="navigation-link navigation-link-13" href="#">
+                        <span data-text="JS.libraries">JS.libraries</span>
+                    </a>
+                  </li>
+                 <li class="navigation-item">
+                    <a class="navigation-link navigation-link-14" href="#">
+                        <span data-text="API">API</span>
+                    </a>
+                  </li>
+                </ul>
+              
+            </div>
+                    <%# <h2 class="titres">Formations</h2> %>
+                        <%# <ul class="progressbar">
                             <li class="active">Avant ça c'est vieux ... 📠 <br>
                                 <p>1992 - 2013</p>
                             </li>
                             <li class="active">KEDGE BUSINESS SCHOOL - BORDEAUX
                                 <p>2013 - 2017</p>
                                 <%= image_tag 'KEDGE-logo.png', class: 'logo-kedge' %>
-                            </li>
+                            <%# </li>
                             <li>LE WAGON - LYON
                                 <p>2019</p>
-                                <%= image_tag 'le-wagon-color.png', class: 'logo-wagon' %>
-                            </li>
-                        </ul>
+                                <%#= image_tag 'le-wagon-color.png', class: 'logo-wagon' %>
+                            <%# </li>
+                        </ul> %> 
 
     <!-- BOUTON TELECHARGER CV -->  
-                    <div id="intro">
-                        <div id="intro-content" class="center-content">
-                            <div class="center-content-inner">
-                                <div class="content-section content-section-margin">
+                    
                                     <%= link_to download_pdf_path, target: "_blank", class: 'buttondl nav-link' do %>
-                                    <div class="bottom"></div>
+                                    <%# <div class="bottom"></div>
                                     <div class="top">
                                         <div class="label">Télécharger mon CV</div>
                                             <div class="buttondl-border buttondl-border-left"></div>
                                             <div class="buttondl-border buttondl-border-top"></div>
                                             <div class="buttondl-border buttondl-border-right"></div>
                                             <div class="buttondl-border buttondl-border-bottom"></div>
-                                    </div>
+                                    </div> %>
                                     <% end %>
-                                </div>
-                            </div>
-                        </div>  
-                    </div>
-                    <a href="#cv/exp" class="blog-slider__button" id="buttonform"><i class="fas fa-angle-double-right"></i></a>
+                            
+                    
                 </div>
 
                 <div class="slide" data-anchor="exp"> 
                     <h2 class="titres">Expériences</h2>
-                        <ul class="progressbar">
+                        <%# <ul class="progressbar">
                             <li class="active entreprise">PIERRE & VACANCES
                                 <div id="detail-description">
                                     <p class="exp-description">2016</p>
                                     <p class="exp-description">Assistant chef de produit</p>
                                     <%= image_tag 'logo-pierre-vacances.png', class: 'logo-pvcp' %>
-                                </div>
+                                <%# </div>
                             </li>
                             <li class="active entreprise">FRANCE TÉLÉVISION
                                 <div id="detail-description">
                                     <p class="exp-description">2017</p>
                                     <p class="exp-description">Assistant chef de produit digital</p>
-                                    <%= image_tag 'logoftp.png', class: 'logo-ftp' %>
-                                </div>
+                                    <%#= image_tag 'logoftp.png', class: 'logo-ftp' %>
+                                <%# </div>
                             </li>
                             <li class="entreprise">TF1 PUBLICITÉ
                                 <div id="detail-description">
                                     <p class="exp-description">2017 - 2018</p>
                                     <p class="exp-description">Chef de produit digital</p>
                                     <%= image_tag 'logoTFP.png', class: 'logo-tfp' %>
-                                </div>
+                                <%# </div>
                             </li>
-                        </ul>
+                        </ul> %>
 
-                    <!-- BOUTON TELECHARGER CV -->  
-                    <div id="intro">
-                        <div id="intro-content" class="center-content">
-                            <div class="center-content-inner">
-                                <div class="content-section content-section-margin">
-                                    <%= link_to download_pdf_path, target: "_blank", class: 'buttondl nav-link' do %>
-                                    <div class="bottom"></div>
-                                    <div class="top">
-                                        <div class="label">Télécharger mon CV</div>
-                                            <div class="buttondl-border buttondl-border-left"></div>
-                                            <div class="buttondl-border buttondl-border-top"></div>
-                                            <div class="buttondl-border buttondl-border-right"></div>
-                                            <div class="buttondl-border buttondl-border-bottom"></div>
-                                        </div>
-                                    <% end %>   
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                
+                   
                     <a href="#cv/formation" class="blog-slider__button" id="buttonexp"><i class="fas fa-angle-double-left"></i></a>
                 </div>           
         </section>
