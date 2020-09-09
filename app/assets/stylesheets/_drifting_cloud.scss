@@ -27,15 +27,27 @@
   z-index: 10;
 }
 
+.cloudBigHome {
+  width: 100px;
+  position: relative;
+  z-index: 10;
+}
+
 .cloudBig {
   width: 100px;
   position: relative;
   z-index: 10;
 }
+.cloud_home {
+  position: absolute;
+  top: 15vh;
+}
+
 .pouf2,
 .pouf3,
 .pouf4,
-.pouf5 {
+.pouf5,
+.pouf6 {
   position: absolute;
   opacity: 1;
   font-weight: bold;
@@ -126,5 +138,5 @@
 }
 
 .hide-clouds {
-  opacity: 0;
+  visibility: hidden;
 }

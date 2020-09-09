@@ -30,6 +30,7 @@ const burstJs = () => {
   let pouf3 = document.querySelector(".pouf3");
   let pouf4 = document.querySelector(".pouf4");
   let pouf5 = document.querySelector(".pouf5");
+  let pouf6 = document.querySelector(".pouf6");
 
   cloudBig.forEach((cloud, index) => {
     console.log(index + cloud);
@@ -46,6 +47,15 @@ const burstJs = () => {
         pouf5.classList.add("pouf");
       }
     });
+  });
+
+  let poufHome = document.querySelector(".cloud_home");
+  let cloudBigHome = document.querySelector(".cloudBigHome");
+  poufHome.addEventListener("click", (e) => {
+    console.log(e);
+    cloudBigHome.classList.add("hide-clouds");
+    smoke.tune({ x: e.pageX, y: e.pageY }).generate().replay();
+    pouf6.classList.add("pouf");
   });
 
   let drift1 = document.querySelector(".drifting_clouds_left_slow");
