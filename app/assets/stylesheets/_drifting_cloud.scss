@@ -1,6 +1,7 @@
 .clouds-wrapper {
   position: relative;
   transform: translateY(70%);
+  z-index: 10;
 }
 
 .drifting_clouds_right {

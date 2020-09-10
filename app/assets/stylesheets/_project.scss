@@ -2,7 +2,6 @@
 }
 
 .imgPart {
-  height: 80vh;
 }
 
 .ProjectImg {
@@ -35,7 +34,7 @@
     z-index: 10;
     position: relative;
     overflow: hidden;
-    transform: translate(30%, 7rem) !important;
+    transform: translate(30%, 0rem) !important;
   }
 }
 
@@ -45,24 +44,24 @@
   width: 85%;
   border-radius: 180px;
   box-shadow: 2px 2px 15px rgba(160, 211, 173, 0.5);
-  transform: translate(29%, -106%);
+  transform: translate(29%, -145%);
   z-index: 1;
   position: relative;
   padding: 10px;
 
   @media screen and (max-width: 992px) {
     box-shadow: none;
-    transform: translate(0%, -67%);
+    transform: translate(0%, -10%);
     width: 80%;
     margin: 0 auto;
     background: none;
   }
   @media screen and (max-width: 768px) {
-    transform: translate(0%, -67%);
+    transform: translate(0%, -8%);
     width: 100%;
   }
   @media screen and (max-width: 576px) {
-    transform: translate(0%, -60%);
+    transform: translate(0%, 2%);
     width: 100%;
     background: none;
     box-shadow: none;
@@ -143,6 +142,6 @@
   }
   @media screen and (max-width: 576px) {
     width: 80%;
-    transform: translate(-5%, 30%) !important;
+    transform: translate(-5%, 2rem) !important;
   }
 }
