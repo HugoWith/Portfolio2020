@@ -8,14 +8,28 @@
 
 .project-preview {
   position: fixed;
-  top: 30%;
-  left: 20%;
+  top: 33%;
+  left: 40%;
   width: 0px;
   height: 300px;
   z-index: 10;
   background-repeat: no-repeat !important;
   background-size: contain !important;
   overflow: hidden;
+
+  @media screen and (max-width: 1200px) {
+  }
+
+  @media screen and (max-width: 992px) {
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+  }
+  @media screen and (max-width: 576px) {
+    top: 67%;
+    left: 11%;
+    width: 230px;
+  }
 }
 
 .navigation-item span:before {

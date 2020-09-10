@@ -1,16 +1,17 @@
 .title--liquid {
-  position: relative;
+  position: absolute;
   height: 70vh;
+  transform: translate(60px, -50%);
 }
 
 .title--liquid h2 {
   position: absolute;
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  transform: translate(155%, 7%);
   font-weight: bold;
   font-family: "oswald";
   font-size: 48px;
+  z-index: 1;
   @media screen and (max-width: 1200px) {
     font-size: 40px;
   }
@@ -22,8 +23,8 @@
     font-size: 30px;
   }
   @media screen and (max-width: 576px) {
-    font-size: 24px;
-    transform: translate(100%, 50%);
+    font-size: 21px;
+    transform: translate(-2rem, 50%);
   }
 }
 

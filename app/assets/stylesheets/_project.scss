@@ -14,38 +14,28 @@
   overflow: hidden;
 
   @media screen and (max-width: 1200px) {
-    top: 20%;
   }
 
   @media screen and (max-width: 992px) {
     width: 20%;
     z-index: 10;
-    top: 15%;
-    left: 29%;
+    transform: translate(144%, -5%) !important;
     position: relative;
-    margin-top: 9%;
-    margin-left: 10%;
     overflow: hidden;
   }
   @media screen and (max-width: 768px) {
     width: 20%;
     z-index: 10;
-    top: 15%;
-    left: 29%;
+    transform: translate(144%, 10%) !important;
     position: relative;
-    margin-top: 9%;
-    margin-left: 10%;
     overflow: hidden;
   }
   @media screen and (max-width: 576px) {
     width: 45%;
     z-index: 10;
-    top: 20%;
-    left: 14%;
     position: relative;
-    margin-top: 9%;
-    margin-left: 10%;
     overflow: hidden;
+    transform: translate(30%, 7rem) !important;
   }
 }
 
@@ -61,15 +51,18 @@
   padding: 10px;
 
   @media screen and (max-width: 992px) {
+    box-shadow: none;
     transform: translate(0%, -67%);
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
+    background: none;
   }
   @media screen and (max-width: 768px) {
     transform: translate(0%, -67%);
     width: 100%;
   }
   @media screen and (max-width: 576px) {
-    transform: translate(0%, -40%);
+    transform: translate(0%, -60%);
     width: 100%;
     background: none;
     box-shadow: none;
@@ -95,6 +88,16 @@
 .innerTextPart {
   margin: 0 auto;
   width: 50%;
+
+  @media screen and (max-width: 992px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 768px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 576px) {
+    width: 80%;
+  }
 }
 
 .btnProject {
@@ -131,6 +134,15 @@
 }
 
 .wawetImg {
-  width: 45%;
-  left: -8%;
+  width: 40%;
+  transform: translate(-25%, -20%) !important ;
+
+  @media screen and (max-width: 992px) {
+    width: 40%;
+    transform: translate(44%, -17%) !important;
+  }
+  @media screen and (max-width: 576px) {
+    width: 80%;
+    transform: translate(-5%, 30%) !important;
+  }
 }

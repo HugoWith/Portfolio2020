@@ -12,7 +12,7 @@ const skills = () => {
     });
     item.addEventListener("mouseout", () => {
       let timeL = gsap.timeline();
-      timeL.to(".project-preview", 0.8, {
+      timeL.to(".project-preview", 1, {
         height: 0,
         width: 0,
         ease: Expo.easeInOut,
@@ -66,9 +66,9 @@ const skills = () => {
     });
     item.addEventListener("mouseout", () => {
       let timeL2 = gsap.timeline();
-      timeL2.to(".project-preview", 0.8, {
-        width: 0,
-        height: 0,
+      timeL2.to(".project-preview", 1, {
+        width: "0px",
+        height: "0px",
         ease: Expo.easeInOut,
       });
     });

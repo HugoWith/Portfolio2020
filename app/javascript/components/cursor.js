@@ -31,6 +31,17 @@ const cursor = () => {
       mouseTxt.innerText = "";
     });
   });
+  let cloudHome = document.querySelector(".cloudBigHome");
+  let mouseTxtHome = document.querySelector(".cursor-text");
+
+  cloudHome.addEventListener("mouseover", (e) => {
+    cursor.classList.add("cursor--bigger");
+    mouseTxtHome.innerText = "📌";
+  });
+  cloudHome.addEventListener("mouseleave", (e) => {
+    cursor.classList.remove("cursor--bigger");
+    mouseTxtHome.innerText = "";
+  });
 
   let link = document.querySelectorAll("a");
   link.forEach((a) => {
