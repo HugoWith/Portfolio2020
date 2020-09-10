@@ -105,26 +105,38 @@ section h1 {
   background-size: 45%, 45%;
   background-repeat: no-repeat, no-repeat;
   background-position: top left, bottom right;
-  animation: bg-jump 8s infinite;
-}
-.section h1 {
-  font-size: 46px;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  padding: 17px;
-  transform: translate(-50%, -60%);
-  background: linear-gradient(to left, #a4d4ae, #32afa9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 0 auto;
 
   @media screen and (max-width: 1200px) {
-    font-size: 60px;
+    background-size: 45%, 45%;
   }
 
   @media screen and (max-width: 992px) {
-    font-size: 50px;
+    background-size: 55%, 55%;
+  }
+  @media screen and (max-width: 768px) {
+    background-size: 75%, 75%;
+  }
+  @media screen and (max-width: 576px) {
+    background-size: 95%, 95%;
+  }
+}
+.section h1 {
+  width: -webkit-fill-available;
+  text-align: center;
+  font-size: 40px;
+  padding: 30px 0 12px 0;
+  top: 30px;
+  position: absolute;
+  background: linear-gradient(to left, #a4d4ae, #32afa9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 992px) {
+    font-size: 40px;
   }
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -136,11 +148,43 @@ section h1 {
 
 .chevron-down {
   color: #32afa9;
+  width: 100%;
+  text-align: center;
   position: absolute;
-  font-size: 24px;
-  top: 92%;
-  right: 50%;
-  animation: arrow-jump 1.5s infinite;
+  bottom: 20px;
+  font-size: 20px;
+  animation: arrow-jump 3s infinite;
+}
+
+.title-suite {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 40px;
+  z-index: 10;
+
+  h3 {
+    color: #32afa9;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
+}
+
+.chevron-end-page {
+  position: absolute;
+  bottom: 50px;
+}
+
+.title-end-page {
+  position: absolute;
+  bottom: 15px;
 }
 
 .s2 {
@@ -359,17 +403,14 @@ section h1 {
   }
 }
 
-// #buttonexp:hover {
-//   color: #ebe720;
-//   transition: 0.8s ease-in-out;
-//   padding: 30px;
-// }
-
-// #buttonform:hover {
-//   color: #ebe720;
-//   transition: 0.8s ease-in-out;
-//   transform: scale(1.5);
-// }
+.next-before-project {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
+}
 
 @keyframes btn-pulse {
   0% {
@@ -385,13 +426,10 @@ section h1 {
 
 @-webkit-keyframes arrow-jump {
   0% {
-    opacity: 0;
+    opacity: 0.7;
   }
-  100% {
+  50% {
     opacity: 1;
-    -webkit-transform: translateY(10px);
-    -moz-transform: translateY(10px);
-    -o-transform: translateY(10px);
     transform: translateY(10px);
   }
 }
