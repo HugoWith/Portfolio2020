@@ -39,15 +39,33 @@ const burstJs = () => {
       smoke.tune({ x: e.pageX, y: e.pageY }).generate().replay();
       if (index === 0) {
         pouf3.classList.add("pouf");
+        cloudWrapper();
       } else if (index === 2) {
         pouf2.classList.add("pouf");
+        cloudWrapper();
       } else if (index === 1) {
         pouf4.classList.add("pouf");
+        cloudWrapper();
       } else {
         pouf5.classList.add("pouf");
+        cloudWrapper();
       }
     });
   });
+
+  function cloudWrapper() {
+    let cloudWrapper = document.querySelector(".clouds-wrapper");
+    if (
+      pouf2.classList.contains("pouf") &&
+      pouf3.classList.contains("pouf") &&
+      pouf4.classList.contains("pouf") &&
+      pouf5.classList.contains("pouf")
+    ) {
+      cloudWrapper.style.visibility = "hidden";
+    } else {
+      cloudWrapper.style.visibility = "visible";
+    }
+  }
 
   let poufHome = document.querySelector(".cloud_home");
   let cloudBigHome = document.querySelector(".cloudBigHome");
