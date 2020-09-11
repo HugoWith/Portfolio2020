@@ -35,20 +35,16 @@ const skills = () => {
     });
     let link3 = document.querySelector(".navigation-link-3");
     link3.addEventListener("mouseover", (e) => {
-      console.log(e + "hover link 1");
       projectP.style.background = "url('/assets/skills/snos.png')";
     });
     link3.addEventListener("mouseout", (e) => {
-      console.log(e + "hover link 1");
       projectP.style.background = "none";
     });
     let link4 = document.querySelector(".navigation-link-4");
     link4.addEventListener("mouseover", (e) => {
-      console.log(e + "hover link 1");
       projectP.style.background = "url('/assets/skills/wawet.png')";
     });
     link4.addEventListener("mouseout", (e) => {
-      console.log(e + "hover link 1");
       projectP.style.background = "none";
     });
   });
@@ -78,7 +74,6 @@ const skills = () => {
       projectP2.style.background = "url('/assets/skills/qab.png')";
     });
     link8.addEventListener("mouseout", (e) => {
-      console.log(e + "out link 8");
       projectP2.style.background = "none";
     });
     let link9 = document.querySelector(".navigation-link-9");

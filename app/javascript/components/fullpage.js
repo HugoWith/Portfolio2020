@@ -10,12 +10,13 @@ const initFullPageJs = () => {
     anchors: ["home", "project", "about", "cv", "contacts"],
     onLeave: (origin, destination, direction) => {
       const section = destination.item;
+      console.log(destination.index);
       const title = section.querySelector("h1");
-      console.log(title);
+
       const tl = new TimelineMax({ delay: 0.5 });
       tl.fromTo(title, 0.5, { y: "50", opacity: 0 }, { y: "-40", opacity: 1 });
-      if (destination.index === 1) {
-        console.log(destination.index);
+
+      if (destination.index === 2) {
         const hugoimg = document.querySelectorAll(".hugoimg");
         const description = document.querySelector(".description");
         const revealImg = document.querySelector(".reveal-img");

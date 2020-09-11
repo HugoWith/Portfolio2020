@@ -33,7 +33,7 @@ const burstJs = () => {
   let pouf6 = document.querySelector(".pouf6");
 
   cloudBig.forEach((cloud, index) => {
-    console.log(index + cloud);
+    index + cloud;
     cloud.addEventListener("click", function (e) {
       cloud.classList.add("hide-clouds");
       smoke.tune({ x: e.pageX, y: e.pageY }).generate().replay();
@@ -70,7 +70,7 @@ const burstJs = () => {
   let poufHome = document.querySelector(".cloud_home");
   let cloudBigHome = document.querySelector(".cloudBigHome");
   poufHome.addEventListener("click", (e) => {
-    console.log(e);
+    e;
     cloudBigHome.classList.add("hide-clouds");
     smoke.tune({ x: e.pageX, y: e.pageY }).generate().replay();
     pouf6.classList.add("pouf");

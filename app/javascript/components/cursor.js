@@ -10,7 +10,6 @@ const cursor = () => {
 
   let h1 = document.querySelectorAll("h1");
   h1.forEach((titre) => {
-    console.log(titre);
     titre.addEventListener("mouseover", (e) => {
       cursor.classList.add("cursor--bigger");
     });
@@ -45,7 +44,6 @@ const cursor = () => {
 
   let link = document.querySelectorAll("a");
   link.forEach((a) => {
-    console.log(a);
     a.addEventListener("mouseover", (e) => {
       cursor.classList.add("cursor--big");
     });
