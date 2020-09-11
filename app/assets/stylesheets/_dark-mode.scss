@@ -1,0 +1,15 @@
+.dark-mode {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.dark-mode-img {
+  width: 50px;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  z-index: 10;
+}
+
+.inverted {
+  filter: invert(1) hue-rotate(180deg);
+}

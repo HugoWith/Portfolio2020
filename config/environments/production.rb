@@ -110,6 +110,11 @@ Rails.application.configure do
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
 
+
+  config.assets.precompile += %w( '.svg' )  
+
+  # Must include to get inline SVGs to work in deploy
+  config.assets.css_compressor = :sass
   # config.action_mailer.default_url_options = { :host => 'hugovalla.herokuapp.com' }  
   # config.action_mailer.delivery_method = :smtp  
   # config.action_mailer.perform_deliveries = true  
