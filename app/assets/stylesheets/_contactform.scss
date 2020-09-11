@@ -3,6 +3,17 @@
   width: 30%;
   transform: translate(10px, 5%);
 
+  @media screen and (max-width: 1200px) {
+    width: 50%;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 992px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 768px) {
+    width: 80%;
+  }
+
   @media screen and (max-width: 576px) {
     width: 80%;
   }
@@ -177,6 +188,7 @@
 }
 
 .submit {
+  margin-top: -1rem;
   @media screen and (max-width: 576px) {
     transform: translateY(-15px);
   }
