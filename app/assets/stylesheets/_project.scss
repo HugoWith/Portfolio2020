@@ -50,7 +50,7 @@
 }
 
 .ProjectImg {
-  width: 100%;
+  width: 400px;
   margin-left: 5rem;
   z-index: 10;
   position: relative;
@@ -65,12 +65,14 @@
     justify-self: center;
     justify-content: center;
     align-items: center;
-    width: 35%;
+    width: 200px;
     z-index: 10;
     overflow: hidden;
+    margin-top: 6.5rem;
   }
   @media screen and (max-width: 768px) {
-    width: 30%;
+    margin-top: 6.5rem;
+    width: 200px;
     z-index: 10;
     overflow: hidden;
   }
@@ -101,19 +103,23 @@
     width: 80%;
     margin: 0 auto;
     background: none;
+    margin-top: 1.5rem;
   }
   @media screen and (max-width: 768px) {
     position: relative;
     transform: translate(0%, -8%);
     width: 100%;
     background: none;
+    margin-top: 1.5rem;
   }
   @media screen and (max-width: 576px) {
     position: relative;
+    margin-top: 1.5rem;
     transform: translate(0%, 2%);
     width: 100%;
     background: none;
     box-shadow: none;
+    border-radius: inherit;
 
     .btn-contact {
       font-size: 9px;
