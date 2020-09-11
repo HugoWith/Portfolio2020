@@ -1,70 +1,125 @@
 .WrapperProject {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  height: 100vh;
+
+  @media screen and (max-width: 1200px) {
+  }
+
+  @media screen and (max-width: 992px) {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: none;
+  }
+  @media screen and (max-width: 768px) {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: none;
+  }
+  @media screen and (max-width: 576px) {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: none;
+  }
 }
 
 .imgPart {
+  justify-self: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+  a {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 1200px) {
+    }
+
+    @media screen and (max-width: 992px) {
+      margin-top: 4rem;
+    }
+    @media screen and (max-width: 768px) {
+      margin-top: 4rem;
+    }
+    @media screen and (max-width: 576px) {
+      margin-top: 4rem;
+    }
+  }
 }
 
 .ProjectImg {
-  width: 30%;
+  width: 400px;
+  margin-left: 5rem;
   z-index: 10;
   position: relative;
-  margin-top: 9%;
-  margin-left: 10%;
+  // transform: translate(30%, 15%) !important;
   overflow: hidden;
 
   @media screen and (max-width: 1200px) {
   }
 
   @media screen and (max-width: 992px) {
-    width: 20%;
+    margin: 0 auto;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
     z-index: 10;
-    transform: translate(144%, -5%) !important;
-    position: relative;
     overflow: hidden;
+    margin-top: 6.5rem;
   }
   @media screen and (max-width: 768px) {
-    width: 20%;
+    margin-top: 6.5rem;
+    width: 200px;
     z-index: 10;
-    transform: translate(144%, 10%) !important;
-    position: relative;
     overflow: hidden;
   }
   @media screen and (max-width: 576px) {
-    width: 45%;
+    width: 40%;
     z-index: 10;
-    position: relative;
     overflow: hidden;
-    transform: translate(30%, 0rem) !important;
   }
 }
 
 .textPart {
   background: white;
   height: 290px;
-  width: 85%;
+  width: 120rem;
+  transform: translate(-19rem, 14rem);
   border-radius: 180px;
   box-shadow: 2px 2px 15px rgba(160, 211, 173, 0.5);
-  transform: translate(29%, -145%);
+  justify-items: stretch;
+  align-items: center;
   z-index: 1;
-  position: relative;
   padding: 10px;
+  overflow: hidden;
 
   @media screen and (max-width: 992px) {
+    position: relative;
     box-shadow: none;
     transform: translate(0%, -10%);
     width: 80%;
     margin: 0 auto;
     background: none;
+    margin-top: 1.5rem;
   }
   @media screen and (max-width: 768px) {
+    position: relative;
     transform: translate(0%, -8%);
     width: 100%;
+    background: none;
+    margin-top: 1.5rem;
   }
   @media screen and (max-width: 576px) {
+    position: relative;
+    margin-top: 1.5rem;
     transform: translate(0%, 2%);
     width: 100%;
     background: none;
     box-shadow: none;
+    border-radius: inherit;
 
     .btn-contact {
       font-size: 9px;
@@ -133,15 +188,22 @@
 }
 
 .wawetImg {
-  width: 40%;
-  transform: translate(-25%, -20%) !important ;
+  width: 600px;
+  margin-left: 1rem;
+  z-index: 10;
+  position: relative;
+  // transform: translate(30%, 15%) !important;
+  overflow: hidden;
 
   @media screen and (max-width: 992px) {
     width: 40%;
-    transform: translate(44%, -17%) !important;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 768px) {
+    width: 40%;
+    margin: 0 auto;
   }
   @media screen and (max-width: 576px) {
     width: 80%;
-    transform: translate(-5%, 2rem) !important;
   }
 }
