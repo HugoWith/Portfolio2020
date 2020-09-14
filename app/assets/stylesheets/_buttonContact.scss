@@ -21,3 +21,18 @@
   opacity: 1;
   cursor: none;
 }
+
+.btn-download-cv {
+  font-weight: bold;
+  cursor: none;
+  color: white;
+  background-color: #3fb5aa;
+  transition: all 0.5s ease-in-out;
+}
+.btn-download-cv:hover {
+  font-weight: bold;
+  cursor: none;
+  color: #3fb5aa;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+}

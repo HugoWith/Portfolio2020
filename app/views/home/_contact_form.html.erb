@@ -1,10 +1,10 @@
 <%= form_for @contact, url: home_index_path, remote: true do |f| %>
     
       <div class="groupinput">
-        <%= f.text_field  :name, required: true, class: "inputform" %></br>
+        <%= f.text_field  :nom, required: true, class: "inputform" %></br>
          <span class="highlight"></span>
          <span class="bar"></span>
-        <%= f.label :name, class: 'labelform' %></br>
+        <%= f.label :nom, class: 'labelform' %></br>
       </div>
 
       <div class="groupinput">
@@ -30,6 +30,7 @@
       <%= f.submit '📬', class: 'btn-contact' %>
       <a class="btn-contact" href='https://www.linkedin.com/in/hugovalla' target ="_blank"><i class="fab fa-linkedin-in"></i></a>
       <a class="btn-contact" href='https://github.com/HugoWith' target ="_blank"><i class="fab fa-github"></i></a>
+      <a class="btn-contact btn-download-cv">Mon CV</a>
     </div>
   <% end %>
   <div class="col-md-6" id="flash-message">
