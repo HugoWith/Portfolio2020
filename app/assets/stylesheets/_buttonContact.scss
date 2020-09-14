@@ -13,7 +13,6 @@
   margin-top: 30px;
 
   @media screen and (max-width: 576px) {
-    height: 100%;
   }
 }
 
@@ -35,4 +34,11 @@
   color: #3fb5aa;
   background-color: white;
   transition: all 0.5s ease-in-out;
+}
+
+.btn-contact-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

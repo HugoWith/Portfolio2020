@@ -1,5 +1,5 @@
 #contact {
-  margin: 0% 5%;
+  margin: 3% 5%;
   width: 36%;
 
   @media screen and (max-width: 1200px) {
@@ -187,7 +187,11 @@
 }
 
 .submit {
-  margin-top: -1rem;
+  display: grid;
+  grid-template-columns: 18% 18% 18% 1fr;
+  grid-gap: 10px;
+  justify-content: center;
+  justify-items: center;
   @media screen and (max-width: 576px) {
     transform: translateY(-15px);
   }
