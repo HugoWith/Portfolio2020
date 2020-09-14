@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Yessica-Regular";
   src: url("/app/assets/font/Yessica-Regular.otf") format("opentype");
+  src: asset-url("Yessica-Regular");
 }
 
 * {
