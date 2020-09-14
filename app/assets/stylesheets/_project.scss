@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 30% 1fr;
   height: 100vh;
+  align-items: center;
 
   @media screen and (max-width: 1200px) {
   }
@@ -88,7 +89,7 @@
   background: white;
   height: 290px;
   width: 120rem;
-  transform: translate(-19rem, 14rem);
+  transform: translateX(-19rem);
   border-radius: 180px;
   box-shadow: 2px 2px 15px rgba(160, 211, 173, 0.5);
   justify-items: stretch;

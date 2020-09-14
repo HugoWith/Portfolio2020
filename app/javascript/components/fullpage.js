@@ -25,8 +25,9 @@ const initFullPageJs = () => {
           "#about--text",
           1.5,
           {
-            y: "1000px",
+            y: "100px",
             ease: Circ.easeOut,
+            opacity: 0,
           },
           0.3
         );
