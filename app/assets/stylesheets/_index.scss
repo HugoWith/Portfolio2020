@@ -358,12 +358,19 @@ section h1 {
   }
 }
 .description p {
-  margin: 50px 0px;
+  margin: 40px 0px;
 }
 
 .text-emphasised {
   font-weight: 900;
   color: #36998f;
+}
+
+.text-crossed {
+  text-decoration: line-through;
+}
+.about--text {
+  margin-top: 10px;
 }
 
 .titres {
