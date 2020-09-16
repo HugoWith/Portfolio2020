@@ -99,6 +99,7 @@ a {
 section h1 {
   font-family: "Oswald", sans-serif;
   margin: 0 auto;
+  z-index: 50;
 }
 
 .s1 {
@@ -131,6 +132,7 @@ section h1 {
   background: linear-gradient(to left, #a4d4ae, #32afa9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  z-index: 50;
 
   @media screen and (max-width: 1200px) {
     font-size: 40px;
