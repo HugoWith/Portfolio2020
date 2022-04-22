@@ -8,7 +8,7 @@
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.2.2",
     "animate.css": "^4.0.0",
-    "fullpage.js": "^3.0.8",
+    "fullpage.js": "^4.0.5",
     "gsap": "^3.2.6",
     "hover-effect": "^1.1.0",
     "three": "^0.116.1",
